@@ -1,24 +1,28 @@
-import { HeadContent, Outlet, createRootRouteWithContext } from "@tanstack/react-router";
+import {
+  createRootRouteWithContext,
+  HeadContent,
+  Outlet,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Header from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/sonner";
 
 import "../index.css";
 
-export interface RouterAppContext {}
+export type RouterAppContext = {};
 
 export const Route = createRootRouteWithContext<RouterAppContext>()({
   component: RootComponent,
   head: () => ({
     meta: [
       {
-        title: "pmi-south-asia",
+        title: "PMI South Asia",
       },
       {
         name: "description",
-        content: "pmi-south-asia is a web application",
+        content: "PMI South Asia Chapter - Empowering Project Professionals",
       },
     ],
     links: [
@@ -34,18 +38,14 @@ function RootComponent() {
   return (
     <>
       <HeadContent />
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        disableTransitionOnChange
-        storageKey="vite-ui-theme"
-      >
-        <div className="grid grid-rows-[auto_1fr] h-svh">
-          <Header />
+      <div className="flex min-h-svh flex-col">
+        <Navbar />
+        <main className="flex-grow pt-24">
           <Outlet />
-        </div>
-        <Toaster richColors />
-      </ThemeProvider>
+        </main>
+        <Footer />
+      </div>
+      <Toaster richColors />
       <TanStackRouterDevtools position="bottom-left" />
     </>
   );
