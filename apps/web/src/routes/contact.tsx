@@ -83,7 +83,7 @@ function ContactComponent() {
 
   const toggleCert = (cert: string) => {
     setSelectedCerts((prev) =>
-      prev.includes(cert) ? prev.filter((c) => c !== cert) : [...prev, cert],
+      prev.includes(cert) ? prev.filter((c) => c !== cert) : [...prev, cert]
     );
   };
 
@@ -155,7 +155,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Call Us
                     </p>
-                    <p className="font-semibold text-lg">+1 (555) 123-4567</p>
+                    <p className="font-semibold text-lg">+91-8065206833</p>
                     <p className="text-gray-500 text-sm">
                       Mon-Fri, 9am - 5pm IST
                     </p>
@@ -188,10 +188,12 @@ function ContactComponent() {
                       Visit HQ
                     </p>
                     <p className="font-semibold text-lg">
-                      123 Project Lane, Suite 400
+                      105 WeWork, 1st Floor, Oberoi Commerz II, International
+                      Business Park, Oberoi Garden City,
                     </p>
                     <p className="text-gray-500 text-sm">
-                      Business District, Mumbai 400001
+                      Off Western Express Highway, Goregaon East, Mumbai,
+                      400063, Maharashtra, India
                     </p>
                   </div>
                 </div>
