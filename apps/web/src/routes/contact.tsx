@@ -170,9 +170,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Email Us
                     </p>
-                    <p className="mb-1 font-semibold text-lg">
-                      info@pmisouthasia.org
-                    </p>
+                    <p className="mb-1 font-semibold text-lg">sales@pmisa.in</p>
                     <p className="text-gray-500 text-sm">
                       Expect a reply within 24 hours
                     </p>
