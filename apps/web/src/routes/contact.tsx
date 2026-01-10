@@ -442,7 +442,7 @@ function ContactComponent() {
                     </>
                   ) : (
                     <>
-                      Send Message{" "}
+                      Submit
                       <Send
                         className="transition-transform group-hover:translate-x-1"
                         size={18}
