@@ -51,11 +51,13 @@ function HomeComponent() {
         <div className="relative z-10 mx-auto flex h-full w-full max-w-[1400px] flex-col items-center px-4 sm:px-6 md:flex-row lg:px-8">
           <div className="relative order-2 h-[350px] w-full overflow-hidden md:order-1 md:h-[550px] md:w-1/2">
             <div className="absolute inset-0 flex items-center justify-center md:justify-start">
-              <div className="hero-curve relative h-full w-full overflow-hidden rounded-3xl md:w-[110%] md:rounded-r-[40%]">
+              <div className="relative h-full w-full overflow-hidden rounded-3xl md:w-[110%] md:rounded-r-[40%]">
                 <img
                   alt="Professional woman smiling"
-                  className="h-full w-full object-cover object-top"
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  className="h-full w-full object-cover"
+                  height={1200}
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=1200&crop=focalpoint&fp-y=0.25&q=80"
+                  width={1000}
                 />
                 <div className="absolute inset-0 bg-indigo-900/10 mix-blend-multiply" />
               </div>
