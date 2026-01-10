@@ -24,14 +24,12 @@ function MembershipComponent() {
             development opportunities right here in the South Asia region.
           </p>
           <div className="mt-10">
-            <a
+            <Link
               className="rounded-full bg-white px-10 py-4 font-bold text-lg text-pmi-primary shadow-lg transition hover:bg-gray-100"
-              href="https://www.pmi.org/membership/join"
-              rel="noreferrer"
-              target="_blank"
+              to="/contact"
             >
               Join PMI & South Asia Chapter
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -188,12 +186,12 @@ function MembershipComponent() {
                   Job Board Access
                 </li>
               </ul>
-              <a
+              <Link
                 className="block w-full rounded-lg bg-white py-3 text-center font-bold text-pmi-deep transition-colors hover:bg-gray-100"
-                href="https://www.pmi.org/membership/join"
+                to="/contact"
               >
                 Join Now
-              </a>
+              </Link>
             </div>
 
             <div className="relative rounded-2xl border border-gray-200 bg-white p-8 transition-shadow hover:shadow-xl">

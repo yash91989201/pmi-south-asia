@@ -48,13 +48,13 @@ function HomeComponent() {
         <div className="pointer-events-none absolute top-0 right-0 h-full w-2/3 bg-gradient-to-l from-purple-900/40 to-transparent" />
         <div className="pointer-events-none absolute bottom-0 left-1/4 h-1/2 w-1/3 rounded-full bg-pmi-primary/20 blur-[100px]" />
 
-        <div className="relative z-10 flex h-full w-full flex-col items-center md:flex-row">
-          <div className="relative order-2 h-[450px] w-full overflow-hidden md:order-1 md:h-[700px] md:w-1/2">
-            <div className="absolute inset-y-0 left-0 h-full w-full md:w-[120%]">
-              <div className="hero-curve relative h-full w-full overflow-hidden rounded-none md:rounded-r-[50%]">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1400px] flex-col items-center px-4 sm:px-6 md:flex-row lg:px-8">
+          <div className="relative order-2 h-[350px] w-full overflow-hidden md:order-1 md:h-[550px] md:w-1/2">
+            <div className="absolute inset-0 flex items-center justify-center md:justify-start">
+              <div className="hero-curve relative h-full w-full overflow-hidden rounded-3xl md:w-[110%] md:rounded-r-[40%]">
                 <img
                   alt="Professional woman smiling"
-                  className="h-full w-full scale-105 transform object-cover object-center"
+                  className="h-full w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 />
                 <div className="absolute inset-0 bg-indigo-900/10 mix-blend-multiply" />
@@ -62,28 +62,28 @@ function HomeComponent() {
             </div>
           </div>
 
-          <div className="order-1 w-full px-6 py-12 text-left md:order-2 md:w-1/2 md:px-16 md:py-0 lg:px-24">
+          <div className="order-1 flex w-full flex-col justify-center px-4 py-16 text-left md:order-2 md:w-1/2 md:py-24 md:pl-12 lg:pl-20">
             <div className="max-w-2xl">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-pmi-accent/90 px-4 py-1.5 font-bold text-xs uppercase tracking-widest">
                 <CheckCircle2 size={14} /> Official Chartered Component
               </div>
-              <h1 className="mb-8 font-extrabold text-5xl leading-tight tracking-tight md:text-6xl lg:text-7xl">
+              <h1 className="mb-6 font-extrabold text-4xl leading-tight tracking-tight md:text-5xl lg:text-6xl">
                 Empowering Project Professionals in South Asia
               </h1>
-              <p className="mb-10 font-light text-gray-200 text-xl leading-relaxed md:text-2xl">
+              <p className="mb-8 font-light text-gray-200 text-lg leading-relaxed md:text-xl">
                 We are the premier resource for Project Management in the
                 region. Join a community dedicated to the highest standards of
                 practice, ethics, and professional development.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  className="flex transform items-center gap-2 rounded-full bg-white px-10 py-4 font-bold text-base text-pmi-deep shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-xl md:text-lg"
+                  className="flex transform items-center gap-2 rounded-full bg-white px-8 py-3.5 font-bold text-base text-pmi-deep shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-xl md:px-10 md:py-4 md:text-lg"
                   to="/membership"
                 >
                   Join Chapter <ArrowRight size={20} />
                 </Link>
                 <Link
-                  className="rounded-full border-2 border-white/30 px-10 py-4 font-bold text-base text-white transition-all duration-300 hover:bg-white/10 md:text-lg"
+                  className="rounded-full border-2 border-white/30 px-8 py-3.5 font-bold text-base text-white transition-all duration-300 hover:bg-white/10 md:px-10 md:py-4 md:text-lg"
                   to="/certifications"
                 >
                   Get Certified

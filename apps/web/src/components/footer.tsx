@@ -313,22 +313,11 @@ export default function Footer() {
 
             <div className="mt-auto flex flex-col space-y-4">
               <div className="mb-2">
-                {/* PMI Logo Representation */}
-                <div className="flex items-center gap-1">
-                  <span className="font-extrabold text-3xl text-pmi-brand tracking-tighter">
-                    P
-                  </span>
-                  <span className="font-extrabold text-3xl text-pmi-accent tracking-tighter">
-                    M
-                  </span>
-                  <span className="font-extrabold text-3xl text-pmi-primary tracking-tighter">
-                    I
-                  </span>
-                  <sup className="mt-2 font-bold text-gray-500 text-xs">®</sup>
-                </div>
-                <div className="font-bold text-pmi-deep text-xs uppercase leading-tight tracking-wider">
-                  South Asia
-                </div>
+                <img
+                  alt="PMI South Asia Logo"
+                  className="h-12 w-auto"
+                  src="/logo.webp"
+                />
               </div>
             </div>
           </div>

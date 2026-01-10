@@ -83,84 +83,11 @@ export default function Navbar() {
             onClick={closeMenu}
             to="/"
           >
-            <svg
-              aria-label="PMI Logo"
-              className={`${scrolled ? "h-10 w-10" : "h-12 w-12"} flex-shrink-0 transition-all duration-300`}
-              fill="none"
-              role="img"
-              viewBox="0 0 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>PMI Logo</title>
-              <text
-                fill="black"
-                fontFamily="Arial, sans-serif"
-                fontSize="58"
-                fontWeight="900"
-                x="-2"
-                y="47"
-              >
-                P
-              </text>
-
-              <path
-                d="M52 2.5 H 70 A 22.5 22.5 0 0 0 70 47.5 H 52 V 2.5 Z"
-                fill="#ff6b00"
-              />
-              <path
-                d="M98 2.5 H 80 A 22.5 22.5 0 0 1 80 47.5 H 98 V 2.5 Z"
-                fill="#ff6b00"
-              />
-
-              <path
-                d="M2 52.5 H 48 V 62 Q 38 75 48 88 V 97.5 H 2 V 88 Q 12 75 2 62 V 52.5 Z"
-                fill="#00a3e0"
-              />
-
-              <defs>
-                <clipPath id="purple-clip">
-                  <rect height="45" width="46" x="52" y="52.5" />
-                </clipPath>
-              </defs>
-              <g clipPath="url(#purple-clip)">
-                <rect fill="#5621b4" height="45" width="46" x="52" y="52.5" />
-                <line
-                  stroke="white"
-                  strokeWidth="8"
-                  x1="45"
-                  x2="105"
-                  y1="50"
-                  y2="110"
-                />
-                <line
-                  stroke="white"
-                  strokeWidth="8"
-                  x1="75"
-                  x2="135"
-                  y1="50"
-                  y2="110"
-                />
-                <line
-                  stroke="white"
-                  strokeWidth="8"
-                  x1="15"
-                  x2="75"
-                  y1="50"
-                  y2="110"
-                />
-              </g>
-            </svg>
-
-            <div className="hidden flex-col justify-center sm:flex">
-              <div className="flex flex-col font-medium text-[13px] text-pmi-brand leading-[0.85] tracking-tight">
-                <span>Project</span>
-                <span>Management</span>
-                <span>Institute.</span>
-              </div>
-              <span className="mt-0.5 font-bold text-pmi-deep text-sm uppercase leading-none tracking-wider">
-                South Asia
-              </span>
-            </div>
+            <img
+              alt="PMI South Asia Logo"
+              className={`${scrolled ? "h-10" : "h-14"} w-auto flex-shrink-0 transition-all duration-300`}
+              src="/logo.webp"
+            />
           </Link>
 
           <nav className="hidden h-full items-center gap-8 md:flex">
