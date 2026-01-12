@@ -193,12 +193,12 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <Link
+            <a
               className="flex items-center gap-2 font-bold text-gray-700 text-sm transition-colors hover:text-pmi-primary"
-              to="/membership"
+              href="https://exam.pmisa.in"
             >
               <User size={18} /> Log In
-            </Link>
+            </a>
             <div className="h-6 w-px bg-gray-200" />
             <button
               className="text-gray-500 transition-colors hover:text-pmi-primary"
