@@ -9,44 +9,30 @@ export const Route = createFileRoute("/about")({
 const boardMembers: BoardMember[] = [
   {
     id: "1",
-    name: "Sarah Jenkins, PMP",
-    role: "Chapter President",
-    bio: "Sarah leads the chapter strategy and alignment with PMI Global. She has over 15 years of experience in IT program management.",
+    name: "Rajaram",
+    role: "Financial Chief Officer",
+    bio: "Rajaram oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
     imageUrl: "",
   },
   {
     id: "2",
-    name: "Michael Chen, PMI-ACP",
-    role: "VP of Finance",
-    bio: "Michael ensures the fiscal health of the chapter, managing budgets for events and member value initiatives.",
+    name: "Ramprasad",
+    role: "Chief Counselor",
+    bio: "Ramprasad provides strategic guidance and advisory support to ensure alignment with PMI standards and chapter objectives.",
     imageUrl: "",
   },
   {
     id: "3",
-    name: "Elena Rodriguez, PMP",
-    role: "VP of Membership",
-    bio: "Elena is dedicated to member retention and growth, ensuring every member finds value in their chapter affiliation.",
+    name: "Prat Willson",
+    role: "Chief Technology Officer",
+    bio: "Prat leads the technological infrastructure and digital initiatives to enhance member engagement and operational efficiency.",
     imageUrl: "",
   },
   {
     id: "4",
-    name: "David Smith, CAPM",
-    role: "VP of Marketing & Communications",
-    bio: "David manages the chapter brand, newsletters, and social media presence to keep the community informed.",
-    imageUrl: "",
-  },
-  {
-    id: "5",
-    name: "Dr. Anita Patel, PfMP",
-    role: "VP of Professional Development",
-    bio: "Curating world-class learning opportunities, ATP courses, and PDU-bearing events for our members.",
-    imageUrl: "",
-  },
-  {
-    id: "6",
-    name: "James Wilson",
-    role: "VP of Volunteers",
-    bio: "Empowering members to give back, lead initiatives, and earn PDUs through service to the chapter.",
+    name: "Akhilesh",
+    role: "Account/Finance Manager",
+    bio: "Akhilesh manages financial accounts, budgeting, and reporting to maintain transparent and efficient financial operations.",
     imageUrl: "",
   },
 ];
@@ -146,13 +132,14 @@ function AboutComponent() {
             </h2>
             <div className="h-1.5 w-20 rounded-full bg-pmi-primary" />
             <p className="mt-6 max-w-3xl font-light text-gray-600 text-xl">
-              Our chapter is led by elected volunteers who are committed to
-              serving our members and advancing the project management
+              Our chapter is guided by experienced professionals in finance,
+              technology, and advisory roles who are committed to ensuring
+              organizational excellence and advancing the project management
               profession.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {boardMembers.map((member) => (
               <div
                 className="group border-pmi-primary border-t-4 bg-white p-10 shadow-sm transition-all duration-300 hover:shadow-xl"
