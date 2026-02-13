@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { FileText, CheckCircle2 } from "lucide-react";
 
 import type { BoardMember } from "@/lib/types";
 
@@ -9,30 +10,9 @@ export const Route = createFileRoute("/about")({
 const boardMembers: BoardMember[] = [
   {
     id: "1",
-    name: "Rajaram",
-    role: "Financial Chief Officer",
-    bio: "Rajaram oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
-    imageUrl: "",
-  },
-  {
-    id: "2",
-    name: "Ramprasad",
-    role: "Chief Counselor",
-    bio: "Ramprasad provides strategic guidance and advisory support to ensure alignment with PMI standards and chapter objectives.",
-    imageUrl: "",
-  },
-  {
-    id: "3",
-    name: "Prat Willson",
-    role: "Chief Technology Officer",
-    bio: "Prat leads the technological infrastructure and digital initiatives to enhance member engagement and operational efficiency.",
-    imageUrl: "",
-  },
-  {
-    id: "4",
-    name: "Akhilesh",
-    role: "Account/Finance Manager",
-    bio: "Akhilesh manages financial accounts, budgeting, and reporting to maintain transparent and efficient financial operations.",
+    name: "Aashish Rajak",
+    role: "FCO",
+    bio: "Aashish Rajak oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
     imageUrl: "",
   },
 ];
@@ -118,6 +98,61 @@ function AboutComponent() {
               </div>
               <div className="font-bold text-gray-600 text-sm uppercase tracking-wider">
                 PMP® Certified
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f0f4f8] py-24">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
+            <div className="w-full lg:w-1/2">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#5621b4] px-4 py-2 font-bold text-white text-xs uppercase tracking-wider">
+                <FileText size={14} />
+                Finance Branch Verification
+              </div>
+              <h2 className="mb-6 font-bold text-4xl text-[#1e0a45] leading-tight md:text-5xl">
+                Corporate Financial{" "}
+                <span className="text-[#5621b4]">Trust & Transparency</span>
+              </h2>
+              <p className="mb-6 font-light text-gray-600 text-lg leading-relaxed">
+                At PMI South Asia, we maintain strictly verified financial
+                channels for all enterprise transactions through our official
+                partner, ensuring the highest standards of accountability and
+                trust in every operation we undertake.
+              </p>
+              <div className="flex items-center gap-2 font-bold text-green-600 text-sm">
+                <CheckCircle2 size={18} />
+                <span>Verified Corporate Branch Profile</span>
+              </div>
+            </div>
+
+            <div className="w-full lg:w-1/2">
+              <div className="rounded-2xl border border-gray-100 bg-white p-8 shadow-lg">
+                <div className="flex items-start gap-6">
+                  <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[#5621b4]/10">
+                    <FileText className="text-[#5621b4]" size={28} />
+                  </div>
+                  <div className="space-y-5">
+                    <div>
+                      <p className="mb-1 font-bold text-gray-400 text-xs uppercase tracking-wider">
+                        Organization Name
+                      </p>
+                      <p className="font-bold text-[#1e0a45] text-lg">
+                        PMI South Asia
+                      </p>
+                    </div>
+                    <div>
+                      <p className="mb-1 font-bold text-gray-400 text-xs uppercase tracking-wider">
+                        Financial Institution
+                      </p>
+                      <p className="font-bold text-[#1e0a45] text-lg">
+                        State Bank of India (SBI)
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

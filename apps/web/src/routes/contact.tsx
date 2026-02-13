@@ -47,9 +47,11 @@ function ContactComponent() {
 
   const [selectedCerts, setSelectedCerts] = useState<string[]>([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [certSearchQuery, setCertSearchQuery] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const {
     register,
@@ -75,11 +77,18 @@ function ContactComponent() {
         !dropdownRef.current.contains(event.target as Node)
       ) {
         setIsDropdownOpen(false);
+        setCertSearchQuery("");
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    if (isDropdownOpen && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [isDropdownOpen]);
 
   const toggleCert = (cert: string) => {
     setSelectedCerts((prev) =>
@@ -112,6 +121,10 @@ function ContactComponent() {
   };
 
   const availableCertifications = certifications ?? [];
+
+  const filteredCertifications = availableCertifications.filter((cert) =>
+    cert.name.toLowerCase().includes(certSearchQuery.toLowerCase())
+  );
 
   return (
     <div className="min-h-screen w-full bg-slate-50 font-sans">
@@ -155,8 +168,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Call Us
                     </p>
-                    <p className="font-semibold text-lg">+91-8065206833</p>
-                    <p className="font-semibold text-lg">+91-8065206834</p>
+                    <p className="font-semibold text-lg">+9xxxxxxxx33</p>
                     <p className="text-gray-500 text-sm">
                       Mon-Fri, 9am - 5pm IST
                     </p>
@@ -171,7 +183,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Email Us
                     </p>
-                    <p className="mb-1 font-semibold text-lg">sales@pmisa.in</p>
+                    <p className="mb-1 font-semibold text-lg">saxxx@xxxxin</p>
                     <p className="text-gray-500 text-sm">
                       Expect a reply within 24 hours
                     </p>
@@ -378,12 +390,23 @@ function ContactComponent() {
 
                   {isDropdownOpen && (
                     <div className="absolute z-50 mt-2 max-h-72 w-full overflow-y-auto rounded-xl border border-gray-100 bg-white shadow-2xl">
-                      {availableCertifications.length === 0 ? (
+                      <div className="sticky top-0 border-gray-100 border-b bg-white p-3">
+                        <input
+                          ref={searchInputRef}
+                          type="text"
+                          placeholder="Search certifications..."
+                          className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-pmi-primary focus:outline-none"
+                          value={certSearchQuery}
+                          onChange={(e) => setCertSearchQuery(e.target.value)}
+                          onClick={(e) => e.stopPropagation()}
+                        />
+                      </div>
+                      {filteredCertifications.length === 0 ? (
                         <div className="px-5 py-4 text-center text-gray-500 text-sm">
-                          No certifications available
+                          No certifications found
                         </div>
                       ) : (
-                        availableCertifications.map((cert) => {
+                        filteredCertifications.map((cert) => {
                           const isSelected = selectedCerts.includes(cert.name);
                           return (
                             <button
