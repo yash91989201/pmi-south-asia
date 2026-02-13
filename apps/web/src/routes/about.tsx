@@ -104,6 +104,51 @@ function AboutComponent() {
         </div>
       </section>
 
+      <section className="bg-[#faf9f6] py-24">
+        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="mb-16">
+            <h2 className="mb-6 font-bold text-4xl text-[#1e0a45]">
+              Board of Directors
+            </h2>
+            <div className="h-1.5 w-20 rounded-full bg-pmi-primary" />
+            <p className="mt-6 max-w-3xl font-light text-gray-600 text-xl">
+              Our chapter is guided by experienced professionals in finance,
+              technology, and advisory roles who are committed to ensuring
+              organizational excellence and advancing the project management
+              profession.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {boardMembers.map((member) => (
+              <div
+                className="group border-pmi-primary border-t-4 bg-white p-10 shadow-sm transition-all duration-300 hover:shadow-xl"
+                key={member.id}
+              >
+                <h3 className="mb-2 font-bold text-2xl text-gray-900 transition-colors group-hover:text-pmi-primary">
+                  {member.name}
+                </h3>
+                <p className="mb-6 font-bold text-pmi-primary text-sm uppercase tracking-wider">
+                  {member.role}
+                </p>
+                <p className="text-base text-gray-600 leading-relaxed">
+                  {member.bio}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-20 text-center">
+            <button
+              className="rounded-full border-2 border-[#1e0a45] bg-transparent px-10 py-4 font-bold text-[#1e0a45] transition-all duration-300 hover:bg-[#1e0a45] hover:text-white"
+              type="button"
+            >
+              View Bylaws & Strategic Plan
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#f0f4f8] py-24">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
@@ -155,51 +200,6 @@ function AboutComponent() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#faf9f6] py-24">
-        <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
-            <h2 className="mb-6 font-bold text-4xl text-[#1e0a45]">
-              Board of Directors
-            </h2>
-            <div className="h-1.5 w-20 rounded-full bg-pmi-primary" />
-            <p className="mt-6 max-w-3xl font-light text-gray-600 text-xl">
-              Our chapter is guided by experienced professionals in finance,
-              technology, and advisory roles who are committed to ensuring
-              organizational excellence and advancing the project management
-              profession.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {boardMembers.map((member) => (
-              <div
-                className="group border-pmi-primary border-t-4 bg-white p-10 shadow-sm transition-all duration-300 hover:shadow-xl"
-                key={member.id}
-              >
-                <h3 className="mb-2 font-bold text-2xl text-gray-900 transition-colors group-hover:text-pmi-primary">
-                  {member.name}
-                </h3>
-                <p className="mb-6 font-bold text-pmi-primary text-sm uppercase tracking-wider">
-                  {member.role}
-                </p>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  {member.bio}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-20 text-center">
-            <button
-              className="rounded-full border-2 border-[#1e0a45] bg-transparent px-10 py-4 font-bold text-[#1e0a45] transition-all duration-300 hover:bg-[#1e0a45] hover:text-white"
-              type="button"
-            >
-              View Bylaws & Strategic Plan
-            </button>
           </div>
         </div>
       </section>
