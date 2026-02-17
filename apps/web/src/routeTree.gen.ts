@@ -18,6 +18,7 @@ import { Route as StoreHelpRouteImport } from './routes/store-help'
 import { Route as StoreRouteImport } from './routes/store'
 import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as ReportPdusRouteImport } from './routes/report-pdus'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PurchasingTermsRouteImport } from './routes/purchasing-terms'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PressRouteImport } from './routes/press'
@@ -38,7 +39,6 @@ import { Route as CertificationProcessRouteImport } from './routes/certification
 import { Route as CareersRouteImport } from './routes/careers'
 import { Route as BlogsRouteImport } from './routes/blogs'
 import { Route as AdvertisingRouteImport } from './routes/advertising'
-import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DashboardContactResponsesRouteImport } from './routes/dashboard/contact-responses'
@@ -87,6 +87,11 @@ const SitemapRoute = SitemapRouteImport.update({
 const ReportPdusRoute = ReportPdusRouteImport.update({
   id: '/report-pdus',
   path: '/report-pdus',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PurchasingTermsRoute = PurchasingTermsRouteImport.update({
@@ -189,11 +194,6 @@ const AdvertisingRoute = AdvertisingRouteImport.update({
   path: '/advertising',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AccessibilityRoute = AccessibilityRouteImport.update({
-  id: '/accessibility',
-  path: '/accessibility',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -219,7 +219,6 @@ const DashboardCertificationsRoute = DashboardCertificationsRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/blogs': typeof BlogsRoute
   '/careers': typeof CareersRoute
@@ -240,6 +239,7 @@ export interface FileRoutesByFullPath {
   '/press': typeof PressRoute
   '/privacy': typeof PrivacyRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report-pdus': typeof ReportPdusRoute
   '/sitemap': typeof SitemapRoute
   '/store': typeof StoreRoute
@@ -255,7 +255,6 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/blogs': typeof BlogsRoute
   '/careers': typeof CareersRoute
@@ -276,6 +275,7 @@ export interface FileRoutesByTo {
   '/press': typeof PressRoute
   '/privacy': typeof PrivacyRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report-pdus': typeof ReportPdusRoute
   '/sitemap': typeof SitemapRoute
   '/store': typeof StoreRoute
@@ -292,7 +292,6 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/blogs': typeof BlogsRoute
   '/careers': typeof CareersRoute
@@ -313,6 +312,7 @@ export interface FileRoutesById {
   '/press': typeof PressRoute
   '/privacy': typeof PrivacyRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/report-pdus': typeof ReportPdusRoute
   '/sitemap': typeof SitemapRoute
   '/store': typeof StoreRoute
@@ -330,7 +330,6 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
-    | '/accessibility'
     | '/advertising'
     | '/blogs'
     | '/careers'
@@ -351,6 +350,7 @@ export interface FileRouteTypes {
     | '/press'
     | '/privacy'
     | '/purchasing-terms'
+    | '/refund-policy'
     | '/report-pdus'
     | '/sitemap'
     | '/store'
@@ -366,7 +366,6 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
-    | '/accessibility'
     | '/advertising'
     | '/blogs'
     | '/careers'
@@ -387,6 +386,7 @@ export interface FileRouteTypes {
     | '/press'
     | '/privacy'
     | '/purchasing-terms'
+    | '/refund-policy'
     | '/report-pdus'
     | '/sitemap'
     | '/store'
@@ -402,7 +402,6 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
-    | '/accessibility'
     | '/advertising'
     | '/blogs'
     | '/careers'
@@ -423,6 +422,7 @@ export interface FileRouteTypes {
     | '/press'
     | '/privacy'
     | '/purchasing-terms'
+    | '/refund-policy'
     | '/report-pdus'
     | '/sitemap'
     | '/store'
@@ -439,7 +439,6 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  AccessibilityRoute: typeof AccessibilityRoute
   AdvertisingRoute: typeof AdvertisingRoute
   BlogsRoute: typeof BlogsRoute
   CareersRoute: typeof CareersRoute
@@ -460,6 +459,7 @@ export interface RootRouteChildren {
   PressRoute: typeof PressRoute
   PrivacyRoute: typeof PrivacyRoute
   PurchasingTermsRoute: typeof PurchasingTermsRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
   ReportPdusRoute: typeof ReportPdusRoute
   SitemapRoute: typeof SitemapRoute
   StoreRoute: typeof StoreRoute
@@ -536,6 +536,13 @@ declare module '@tanstack/react-router' {
       path: '/report-pdus'
       fullPath: '/report-pdus'
       preLoaderRoute: typeof ReportPdusRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/purchasing-terms': {
@@ -678,13 +685,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdvertisingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/accessibility': {
-      id: '/accessibility'
-      path: '/accessibility'
-      fullPath: '/accessibility'
-      preLoaderRoute: typeof AccessibilityRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -719,7 +719,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  AccessibilityRoute: AccessibilityRoute,
   AdvertisingRoute: AdvertisingRoute,
   BlogsRoute: BlogsRoute,
   CareersRoute: CareersRoute,
@@ -740,6 +739,7 @@ const rootRouteChildren: RootRouteChildren = {
   PressRoute: PressRoute,
   PrivacyRoute: PrivacyRoute,
   PurchasingTermsRoute: PurchasingTermsRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
   ReportPdusRoute: ReportPdusRoute,
   SitemapRoute: SitemapRoute,
   StoreRoute: StoreRoute,

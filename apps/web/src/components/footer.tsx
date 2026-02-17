@@ -328,9 +328,9 @@ export default function Footer() {
           <div className="mb-4 flex flex-wrap justify-center gap-4 md:mb-0 md:gap-6">
             <Link
               className="hover:text-pmi-primary hover:underline"
-              to="/accessibility"
+              to="/refund-policy"
             >
-              Accessibility
+              Refund Policy
             </Link>
             <Link
               className="hover:text-pmi-primary hover:underline"
@@ -348,7 +348,7 @@ export default function Footer() {
               className="hover:text-pmi-primary hover:underline"
               to="/terms"
             >
-              Terms of use
+              Terms & Conditions
             </Link>
             <Link
               className="hover:text-pmi-primary hover:underline"
