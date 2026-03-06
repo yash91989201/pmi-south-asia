@@ -10,9 +10,9 @@ export const Route = createFileRoute("/about")({
 const boardMembers: BoardMember[] = [
   {
     id: "1",
-    name: "Aashish Rajak",
+    name: "Ashish Rajak",
     role: "FCO",
-    bio: "Aashish Rajak oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
+    bio: "Ashish Rajak oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
     imageUrl: "",
   },
 ];
