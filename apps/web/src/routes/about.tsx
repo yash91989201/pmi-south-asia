@@ -17,7 +17,7 @@ const boardMembers: BoardMember[] = [
   },
   {
     id: "2",
-    name: "Rajnee Yadav",
+    name: "Rajanee Yadav",
     role: "Account Manager",
     bio: "Rajnee Yadav manages member accounts and coordinates financial records, ensuring smooth handling of account-related activities for the PMISA.",
     imageUrl: "",
