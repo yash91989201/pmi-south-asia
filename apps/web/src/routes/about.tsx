@@ -15,6 +15,13 @@ const boardMembers: BoardMember[] = [
     bio: "Ashish Rajak oversees the financial operations and ensures fiscal responsibility for the chapter's initiatives and programs.",
     imageUrl: "",
   },
+  {
+    id: "2",
+    name: "Rajnee Yadav",
+    role: "Account Manager",
+    bio: "Rajnee Yadav manages member accounts and coordinates financial records, ensuring smooth handling of account-related activities for the PMISA.",
+    imageUrl: "",
+  },
 ];
 
 function AboutComponent() {
