@@ -200,7 +200,7 @@ function AboutComponent() {
                         Financial Institution
                       </p>
                       <p className="font-bold text-[#1e0a45] text-lg">
-                        State Bank of India (SBI)
+                        Central Bank of India (CBI)
                       </p>
                     </div>
                   </div>
