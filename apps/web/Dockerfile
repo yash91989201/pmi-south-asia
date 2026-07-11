@@ -11,6 +11,7 @@ COPY apps/web/package.json apps/web/
 COPY packages/config/package.json packages/config/
 COPY packages/backend/package.json packages/backend/
 COPY packages/env/package.json packages/env/
+COPY packages/ui/package.json packages/ui/
 
 RUN --mount=type=cache,target=/root/.bun/install/cache \
   bun install
@@ -23,6 +24,7 @@ WORKDIR /app
 
 COPY packages/config packages/config
 COPY packages/env packages/env
+COPY packages/ui packages/ui
 
 COPY packages/backend/convex packages/backend/convex
 
