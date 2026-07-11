@@ -319,9 +319,14 @@ function TopUtilityBar() {
           />
         </Link>
 
-        <Link className="text-gray-700 text-sm hover:text-primary" to="/login">
+        <a
+          className="text-gray-700 text-sm hover:text-primary"
+          href="https://exam.pmisa.in"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           Log in
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -516,13 +521,15 @@ function MobileSheet({
           </Link>
         </div>
         <div className="flex items-center gap-2 border-gray-200 border-t bg-white p-4">
-          <Link
+          <a
             className="flex-1 rounded border border-primary px-3 py-2 text-center font-semibold text-primary text-sm"
+            href="https://exam.pmisa.in"
             onClick={onClose}
-            to="/login"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Log in
-          </Link>
+          </a>
         </div>
       </div>
     </div>
