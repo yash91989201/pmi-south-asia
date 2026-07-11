@@ -1,5 +1,7 @@
 # pmi-south-asia
 
+This branch has the old pmisa site, the pmigov site code will be used in pmisa but rebranded to pmisa.
+
 This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Convex, and more.
 
 ## Features
