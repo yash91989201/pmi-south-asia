@@ -13,8 +13,8 @@
   "iconLibrary": "lucide",
   "aliases": {
     "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "utils": "@pmi-south-asia/ui/lib/utils",
+    "ui": "@pmi-south-asia/ui/components",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },

@@ -1,8 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import "@pmi-south-asia/ui/globals.css";
 
 @theme inline {
-  --font-sans: "Inter", sans-serif;
   --color-pmi-brand: #0075c9;
   --color-pmi-primary: #5621b4;
   --color-pmi-deep: #13072e;
@@ -11,14 +9,8 @@
 }
 
 @layer base {
-  * {
-    @apply border-gray-200;
-  }
   body {
-    @apply font-sans bg-slate-50 text-slate-900;
-  }
-  html {
-    @apply font-sans;
+    @apply bg-slate-50 text-slate-900;
   }
 }
 

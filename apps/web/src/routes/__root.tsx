@@ -5,9 +5,9 @@ import {
 } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
-import { Toaster } from "@/components/ui/sonner";
+import { Footer } from "@/components/footer";
+import Header from "@/components/header";
+import { Toaster } from "@pmi-south-asia/ui/components/sonner";
 
 import "../index.css";
 
@@ -18,11 +18,11 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "PMI South Asia",
+        title: "PMI SA",
       },
       {
         name: "description",
-        content: "PMI South Asia Chapter - Empowering Project Professionals",
+        content: "PMI SA - Empowering Project Professionals",
       },
     ],
     links: [
@@ -39,7 +39,7 @@ function RootComponent() {
     <>
       <HeadContent />
       <div className="flex min-h-svh flex-col">
-        <Navbar />
+        <Header />
         <main className="flex-grow pt-24">
           <Outlet />
         </main>

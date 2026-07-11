@@ -9,74 +9,85 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WhatIsPmRouteImport } from './routes/what-is-pm'
-import { Route as WebinarsRouteImport } from './routes/webinars'
-import { Route as TrainingPartnersRouteImport } from './routes/training-partners'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as TemplatesRouteImport } from './routes/templates'
-import { Route as StoreHelpRouteImport } from './routes/store-help'
-import { Route as StoreRouteImport } from './routes/store'
+import { Route as TheShiftCodePodcastRouteImport } from './routes/the-shift-code-podcast'
+import { Route as TermsOfUseRouteImport } from './routes/terms-of-use'
 import { Route as SitemapRouteImport } from './routes/sitemap'
-import { Route as ReportPdusRouteImport } from './routes/report-pdus'
+import { Route as SignupRouteImport } from './routes/signup'
 import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PurchasingTermsRouteImport } from './routes/purchasing-terms'
+import { Route as ProjectifiedPodcastRouteImport } from './routes/projectified-podcast'
 import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PressRouteImport } from './routes/press'
-import { Route as PmiBlogRouteImport } from './routes/pmi-blog'
-import { Route as PmbokGuideRouteImport } from './routes/pmbok-guide'
-import { Route as OnlineCoursesRouteImport } from './routes/online-courses'
-import { Route as MembershipFaqsRouteImport } from './routes/membership-faqs'
+import { Route as MilitaryRouteImport } from './routes/military'
 import { Route as MembershipRouteImport } from './routes/membership'
-import { Route as LocalChaptersRouteImport } from './routes/local-chapters'
-import { Route as EventsRouteImport } from './routes/events'
-import { Route as EnterprisePartnersRouteImport } from './routes/enterprise-partners'
-import { Route as ElearningGiftsRouteImport } from './routes/elearning-gifts'
-import { Route as DiscussionsRouteImport } from './routes/discussions'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as InfinityRouteImport } from './routes/infinity'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CommunityLatestRouteImport } from './routes/community-latest'
-import { Route as CertificationsRouteImport } from './routes/certifications'
-import { Route as CertificationProcessRouteImport } from './routes/certification-process'
-import { Route as CareersRouteImport } from './routes/careers'
-import { Route as BlogsRouteImport } from './routes/blogs'
+import { Route as CareerResourcesRouteImport } from './routes/career-resources'
+import { Route as CareerNavigatorRouteImport } from './routes/career-navigator'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as AiTodayPodcastRouteImport } from './routes/ai-today-podcast'
 import { Route as AdvertisingRouteImport } from './routes/advertising'
+import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EventsIndexRouteImport } from './routes/events/index'
+import { Route as CertificationsIndexRouteImport } from './routes/certifications/index'
+import { Route as BusinessSolutionsIndexRouteImport } from './routes/business-solutions/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as AboutIndexRouteImport } from './routes/about/index'
+import { Route as MembershipStudentRouteImport } from './routes/membership/student'
+import { Route as MembershipProfessionalRouteImport } from './routes/membership/professional'
+import { Route as MembershipGiftRouteImport } from './routes/membership/gift'
+import { Route as MembershipChaptersRouteImport } from './routes/membership/chapters'
+import { Route as LearningWebinarsRouteImport } from './routes/learning/webinars'
+import { Route as LearningThoughtLeadershipRouteImport } from './routes/learning/thought-leadership'
+import { Route as LearningProjectManagementJournalRouteImport } from './routes/learning/project-management-journal'
+import { Route as LearningPmiTrainingRouteImport } from './routes/learning/pmi-training'
+import { Route as LearningOnlineCoursesRouteImport } from './routes/learning/online-courses'
+import { Route as LearningInstructorLedTrainingRouteImport } from './routes/learning/instructor-led-training'
+import { Route as LearningFreeOnlineCoursesRouteImport } from './routes/learning/free-online-courses'
+import { Route as LearningFoundationsOfProjectManagementRouteImport } from './routes/learning/foundations-of-project-management'
+import { Route as LearningExamPrepRouteImport } from './routes/learning/exam-prep'
+import { Route as LearningBrightlineRouteImport } from './routes/learning/brightline'
+import { Route as LearningAcademicSponsoredResearchRouteImport } from './routes/learning/academic-sponsored-research'
+import { Route as LearningAcademicProgramsRouteImport } from './routes/learning/academic-programs'
+import { Route as EventsSpeakingOpportunitiesRouteImport } from './routes/events/speaking-opportunities'
+import { Route as EventsEventsGroupRegistrationRouteImport } from './routes/events/events-group-registration'
+import { Route as EventsSlugRouteImport } from './routes/events/$slug'
 import { Route as DashboardContactResponsesRouteImport } from './routes/dashboard/contact-responses'
 import { Route as DashboardCertificationsRouteImport } from './routes/dashboard/certifications'
+import { Route as CertificationsSlugRouteImport } from './routes/certifications/$slug'
+import { Route as BusinessSolutionsTransformationRouteImport } from './routes/business-solutions/transformation'
+import { Route as BusinessSolutionsTheGlobalExecutiveCouncilRouteImport } from './routes/business-solutions/the-global-executive-council'
+import { Route as BusinessSolutionsTalentManagementRouteImport } from './routes/business-solutions/talent-management'
+import { Route as BusinessSolutionsPmpProjectManagementCertificationRouteImport } from './routes/business-solutions/pmp-project-management-certification'
+import { Route as BusinessSolutionsNonProfitsRouteImport } from './routes/business-solutions/non-profits'
+import { Route as BusinessSolutionsHumanResourcesRouteImport } from './routes/business-solutions/human-resources'
+import { Route as BusinessSolutionsGovernmentActivitiesAdvocacyRouteImport } from './routes/business-solutions/government-activities-advocacy'
+import { Route as BusinessSolutionsEnterpriseNewsletterRouteImport } from './routes/business-solutions/enterprise-newsletter'
+import { Route as BusinessSolutionsConstructionRouteImport } from './routes/business-solutions/construction'
+import { Route as BusinessSolutionsCommercialPartnersRouteImport } from './routes/business-solutions/commercial-partners'
+import { Route as BusinessSolutionsCaseStudiesRouteImport } from './routes/business-solutions/case-studies'
+import { Route as BusinessSolutionsAgileTechnicalSolutionsRouteImport } from './routes/business-solutions/agile-technical-solutions'
+import { Route as BusinessSolutionsAcademicInstitutionsRouteImport } from './routes/business-solutions/academic-institutions'
+import { Route as BusinessSolutionsSlugRouteImport } from './routes/business-solutions/$slug'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
+import { Route as CertificationsCertificationResourcesIndexRouteImport } from './routes/certifications/certification-resources/index'
+import { Route as BusinessSolutionsCommercialPartnersIndexRouteImport } from './routes/business-solutions/commercial-partners/index'
+import { Route as CertificationsCertificationResourcesSlugRouteImport } from './routes/certifications/certification-resources/$slug'
+import { Route as BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRouteImport } from './routes/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+import { Route as BusinessSolutionsCommercialPartnersEnterpriseMembershipRouteImport } from './routes/business-solutions/commercial-partners/enterprise-membership'
+import { Route as BusinessSolutionsCommercialPartnersSlugRouteImport } from './routes/business-solutions/commercial-partners/$slug'
 
-const WhatIsPmRoute = WhatIsPmRouteImport.update({
-  id: '/what-is-pm',
-  path: '/what-is-pm',
+const TheShiftCodePodcastRoute = TheShiftCodePodcastRouteImport.update({
+  id: '/the-shift-code-podcast',
+  path: '/the-shift-code-podcast',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WebinarsRoute = WebinarsRouteImport.update({
-  id: '/webinars',
-  path: '/webinars',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TrainingPartnersRoute = TrainingPartnersRouteImport.update({
-  id: '/training-partners',
-  path: '/training-partners',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TemplatesRoute = TemplatesRouteImport.update({
-  id: '/templates',
-  path: '/templates',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StoreHelpRoute = StoreHelpRouteImport.update({
-  id: '/store-help',
-  path: '/store-help',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StoreRoute = StoreRouteImport.update({
-  id: '/store',
-  path: '/store',
+const TermsOfUseRoute = TermsOfUseRouteImport.update({
+  id: '/terms-of-use',
+  path: '/terms-of-use',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapRoute = SitemapRouteImport.update({
@@ -84,9 +95,9 @@ const SitemapRoute = SitemapRouteImport.update({
   path: '/sitemap',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ReportPdusRoute = ReportPdusRouteImport.update({
-  id: '/report-pdus',
-  path: '/report-pdus',
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RefundPolicyRoute = RefundPolicyRouteImport.update({
@@ -99,34 +110,19 @@ const PurchasingTermsRoute = PurchasingTermsRouteImport.update({
   path: '/purchasing-terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectifiedPodcastRoute = ProjectifiedPodcastRouteImport.update({
+  id: '/projectified-podcast',
+  path: '/projectified-podcast',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PressRoute = PressRouteImport.update({
-  id: '/press',
-  path: '/press',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PmiBlogRoute = PmiBlogRouteImport.update({
-  id: '/pmi-blog',
-  path: '/pmi-blog',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PmbokGuideRoute = PmbokGuideRouteImport.update({
-  id: '/pmbok-guide',
-  path: '/pmbok-guide',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OnlineCoursesRoute = OnlineCoursesRouteImport.update({
-  id: '/online-courses',
-  path: '/online-courses',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MembershipFaqsRoute = MembershipFaqsRouteImport.update({
-  id: '/membership-faqs',
-  path: '/membership-faqs',
+const MilitaryRoute = MilitaryRouteImport.update({
+  id: '/military',
+  path: '/military',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MembershipRoute = MembershipRouteImport.update({
@@ -134,29 +130,19 @@ const MembershipRoute = MembershipRouteImport.update({
   path: '/membership',
   getParentRoute: () => rootRouteImport,
 } as any)
-const LocalChaptersRoute = LocalChaptersRouteImport.update({
-  id: '/local-chapters',
-  path: '/local-chapters',
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EventsRoute = EventsRouteImport.update({
-  id: '/events',
-  path: '/events',
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EnterprisePartnersRoute = EnterprisePartnersRouteImport.update({
-  id: '/enterprise-partners',
-  path: '/enterprise-partners',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ElearningGiftsRoute = ElearningGiftsRouteImport.update({
-  id: '/elearning-gifts',
-  path: '/elearning-gifts',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DiscussionsRoute = DiscussionsRouteImport.update({
-  id: '/discussions',
-  path: '/discussions',
+const InfinityRoute = InfinityRouteImport.update({
+  id: '/infinity',
+  path: '/infinity',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -164,34 +150,34 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CommunityLatestRoute = CommunityLatestRouteImport.update({
-  id: '/community-latest',
-  path: '/community-latest',
+const CareerResourcesRoute = CareerResourcesRouteImport.update({
+  id: '/career-resources',
+  path: '/career-resources',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CertificationsRoute = CertificationsRouteImport.update({
-  id: '/certifications',
-  path: '/certifications',
+const CareerNavigatorRoute = CareerNavigatorRouteImport.update({
+  id: '/career-navigator',
+  path: '/career-navigator',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CertificationProcessRoute = CertificationProcessRouteImport.update({
-  id: '/certification-process',
-  path: '/certification-process',
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CareersRoute = CareersRouteImport.update({
-  id: '/careers',
-  path: '/careers',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogsRoute = BlogsRouteImport.update({
-  id: '/blogs',
-  path: '/blogs',
+const AiTodayPodcastRoute = AiTodayPodcastRouteImport.update({
+  id: '/ai-today-podcast',
+  path: '/ai-today-podcast',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdvertisingRoute = AdvertisingRouteImport.update({
   id: '/advertising',
   path: '/advertising',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccessibilityRoute = AccessibilityRouteImport.update({
+  id: '/accessibility',
+  path: '/accessibility',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -202,6 +188,135 @@ const AboutRoute = AboutRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsIndexRoute = EventsIndexRouteImport.update({
+  id: '/events/',
+  path: '/events/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CertificationsIndexRoute = CertificationsIndexRouteImport.update({
+  id: '/certifications/',
+  path: '/certifications/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessSolutionsIndexRoute = BusinessSolutionsIndexRouteImport.update({
+  id: '/business-solutions/',
+  path: '/business-solutions/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => BlogRoute,
+} as any)
+const AboutIndexRoute = AboutIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AboutRoute,
+} as any)
+const MembershipStudentRoute = MembershipStudentRouteImport.update({
+  id: '/student',
+  path: '/student',
+  getParentRoute: () => MembershipRoute,
+} as any)
+const MembershipProfessionalRoute = MembershipProfessionalRouteImport.update({
+  id: '/professional',
+  path: '/professional',
+  getParentRoute: () => MembershipRoute,
+} as any)
+const MembershipGiftRoute = MembershipGiftRouteImport.update({
+  id: '/gift',
+  path: '/gift',
+  getParentRoute: () => MembershipRoute,
+} as any)
+const MembershipChaptersRoute = MembershipChaptersRouteImport.update({
+  id: '/chapters',
+  path: '/chapters',
+  getParentRoute: () => MembershipRoute,
+} as any)
+const LearningWebinarsRoute = LearningWebinarsRouteImport.update({
+  id: '/learning/webinars',
+  path: '/learning/webinars',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningThoughtLeadershipRoute =
+  LearningThoughtLeadershipRouteImport.update({
+    id: '/learning/thought-leadership',
+    path: '/learning/thought-leadership',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningProjectManagementJournalRoute =
+  LearningProjectManagementJournalRouteImport.update({
+    id: '/learning/project-management-journal',
+    path: '/learning/project-management-journal',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningPmiTrainingRoute = LearningPmiTrainingRouteImport.update({
+  id: '/learning/pmi-training',
+  path: '/learning/pmi-training',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningOnlineCoursesRoute = LearningOnlineCoursesRouteImport.update({
+  id: '/learning/online-courses',
+  path: '/learning/online-courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningInstructorLedTrainingRoute =
+  LearningInstructorLedTrainingRouteImport.update({
+    id: '/learning/instructor-led-training',
+    path: '/learning/instructor-led-training',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningFreeOnlineCoursesRoute =
+  LearningFreeOnlineCoursesRouteImport.update({
+    id: '/learning/free-online-courses',
+    path: '/learning/free-online-courses',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningFoundationsOfProjectManagementRoute =
+  LearningFoundationsOfProjectManagementRouteImport.update({
+    id: '/learning/foundations-of-project-management',
+    path: '/learning/foundations-of-project-management',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningExamPrepRoute = LearningExamPrepRouteImport.update({
+  id: '/learning/exam-prep',
+  path: '/learning/exam-prep',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningBrightlineRoute = LearningBrightlineRouteImport.update({
+  id: '/learning/brightline',
+  path: '/learning/brightline',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LearningAcademicSponsoredResearchRoute =
+  LearningAcademicSponsoredResearchRouteImport.update({
+    id: '/learning/academic-sponsored-research',
+    path: '/learning/academic-sponsored-research',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LearningAcademicProgramsRoute =
+  LearningAcademicProgramsRouteImport.update({
+    id: '/learning/academic-programs',
+    path: '/learning/academic-programs',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventsSpeakingOpportunitiesRoute =
+  EventsSpeakingOpportunitiesRouteImport.update({
+    id: '/events/speaking-opportunities',
+    path: '/events/speaking-opportunities',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventsEventsGroupRegistrationRoute =
+  EventsEventsGroupRegistrationRouteImport.update({
+    id: '/events/events-group-registration',
+    path: '/events/events-group-registration',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EventsSlugRoute = EventsSlugRouteImport.update({
+  id: '/events/$slug',
+  path: '/events/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardContactResponsesRoute =
@@ -215,313 +330,644 @@ const DashboardCertificationsRoute = DashboardCertificationsRouteImport.update({
   path: '/dashboard/certifications',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CertificationsSlugRoute = CertificationsSlugRouteImport.update({
+  id: '/certifications/$slug',
+  path: '/certifications/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessSolutionsTransformationRoute =
+  BusinessSolutionsTransformationRouteImport.update({
+    id: '/business-solutions/transformation',
+    path: '/business-solutions/transformation',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsTheGlobalExecutiveCouncilRoute =
+  BusinessSolutionsTheGlobalExecutiveCouncilRouteImport.update({
+    id: '/business-solutions/the-global-executive-council',
+    path: '/business-solutions/the-global-executive-council',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsTalentManagementRoute =
+  BusinessSolutionsTalentManagementRouteImport.update({
+    id: '/business-solutions/talent-management',
+    path: '/business-solutions/talent-management',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsPmpProjectManagementCertificationRoute =
+  BusinessSolutionsPmpProjectManagementCertificationRouteImport.update({
+    id: '/business-solutions/pmp-project-management-certification',
+    path: '/business-solutions/pmp-project-management-certification',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsNonProfitsRoute =
+  BusinessSolutionsNonProfitsRouteImport.update({
+    id: '/business-solutions/non-profits',
+    path: '/business-solutions/non-profits',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsHumanResourcesRoute =
+  BusinessSolutionsHumanResourcesRouteImport.update({
+    id: '/business-solutions/human-resources',
+    path: '/business-solutions/human-resources',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsGovernmentActivitiesAdvocacyRoute =
+  BusinessSolutionsGovernmentActivitiesAdvocacyRouteImport.update({
+    id: '/business-solutions/government-activities-advocacy',
+    path: '/business-solutions/government-activities-advocacy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsEnterpriseNewsletterRoute =
+  BusinessSolutionsEnterpriseNewsletterRouteImport.update({
+    id: '/business-solutions/enterprise-newsletter',
+    path: '/business-solutions/enterprise-newsletter',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsConstructionRoute =
+  BusinessSolutionsConstructionRouteImport.update({
+    id: '/business-solutions/construction',
+    path: '/business-solutions/construction',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsCommercialPartnersRoute =
+  BusinessSolutionsCommercialPartnersRouteImport.update({
+    id: '/business-solutions/commercial-partners',
+    path: '/business-solutions/commercial-partners',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsCaseStudiesRoute =
+  BusinessSolutionsCaseStudiesRouteImport.update({
+    id: '/business-solutions/case-studies',
+    path: '/business-solutions/case-studies',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsAgileTechnicalSolutionsRoute =
+  BusinessSolutionsAgileTechnicalSolutionsRouteImport.update({
+    id: '/business-solutions/agile-technical-solutions',
+    path: '/business-solutions/agile-technical-solutions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsAcademicInstitutionsRoute =
+  BusinessSolutionsAcademicInstitutionsRouteImport.update({
+    id: '/business-solutions/academic-institutions',
+    path: '/business-solutions/academic-institutions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsSlugRoute = BusinessSolutionsSlugRouteImport.update({
+  id: '/business-solutions/$slug',
+  path: '/business-solutions/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
+const CertificationsCertificationResourcesIndexRoute =
+  CertificationsCertificationResourcesIndexRouteImport.update({
+    id: '/certifications/certification-resources/',
+    path: '/certifications/certification-resources/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsCommercialPartnersIndexRoute =
+  BusinessSolutionsCommercialPartnersIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => BusinessSolutionsCommercialPartnersRoute,
+  } as any)
+const CertificationsCertificationResourcesSlugRoute =
+  CertificationsCertificationResourcesSlugRouteImport.update({
+    id: '/certifications/certification-resources/$slug',
+    path: '/certifications/certification-resources/$slug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute =
+  BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRouteImport.update(
+    {
+      id: '/pmi-infinity-for-organizations',
+      path: '/pmi-infinity-for-organizations',
+      getParentRoute: () => BusinessSolutionsCommercialPartnersRoute,
+    } as any,
+  )
+const BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute =
+  BusinessSolutionsCommercialPartnersEnterpriseMembershipRouteImport.update({
+    id: '/enterprise-membership',
+    path: '/enterprise-membership',
+    getParentRoute: () => BusinessSolutionsCommercialPartnersRoute,
+  } as any)
+const BusinessSolutionsCommercialPartnersSlugRoute =
+  BusinessSolutionsCommercialPartnersSlugRouteImport.update({
+    id: '/$slug',
+    path: '/$slug',
+    getParentRoute: () => BusinessSolutionsCommercialPartnersRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
+  '/about': typeof AboutRouteWithChildren
+  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
-  '/blogs': typeof BlogsRoute
-  '/careers': typeof CareersRoute
-  '/certification-process': typeof CertificationProcessRoute
-  '/certifications': typeof CertificationsRoute
-  '/community-latest': typeof CommunityLatestRoute
+  '/ai-today-podcast': typeof AiTodayPodcastRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/career-navigator': typeof CareerNavigatorRoute
+  '/career-resources': typeof CareerResourcesRoute
   '/contact': typeof ContactRoute
-  '/discussions': typeof DiscussionsRoute
-  '/elearning-gifts': typeof ElearningGiftsRoute
-  '/enterprise-partners': typeof EnterprisePartnersRoute
-  '/events': typeof EventsRoute
-  '/local-chapters': typeof LocalChaptersRoute
-  '/membership': typeof MembershipRoute
-  '/membership-faqs': typeof MembershipFaqsRoute
-  '/online-courses': typeof OnlineCoursesRoute
-  '/pmbok-guide': typeof PmbokGuideRoute
-  '/pmi-blog': typeof PmiBlogRoute
-  '/press': typeof PressRoute
+  '/infinity': typeof InfinityRoute
+  '/insights': typeof InsightsRoute
+  '/login': typeof LoginRoute
+  '/membership': typeof MembershipRouteWithChildren
+  '/military': typeof MilitaryRoute
   '/privacy': typeof PrivacyRoute
+  '/projectified-podcast': typeof ProjectifiedPodcastRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/report-pdus': typeof ReportPdusRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
-  '/store': typeof StoreRoute
-  '/store-help': typeof StoreHelpRoute
-  '/templates': typeof TemplatesRoute
-  '/terms': typeof TermsRoute
-  '/training-partners': typeof TrainingPartnersRoute
-  '/webinars': typeof WebinarsRoute
-  '/what-is-pm': typeof WhatIsPmRoute
+  '/terms-of-use': typeof TermsOfUseRoute
+  '/the-shift-code-podcast': typeof TheShiftCodePodcastRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/business-solutions/$slug': typeof BusinessSolutionsSlugRoute
+  '/business-solutions/academic-institutions': typeof BusinessSolutionsAcademicInstitutionsRoute
+  '/business-solutions/agile-technical-solutions': typeof BusinessSolutionsAgileTechnicalSolutionsRoute
+  '/business-solutions/case-studies': typeof BusinessSolutionsCaseStudiesRoute
+  '/business-solutions/commercial-partners': typeof BusinessSolutionsCommercialPartnersRouteWithChildren
+  '/business-solutions/construction': typeof BusinessSolutionsConstructionRoute
+  '/business-solutions/enterprise-newsletter': typeof BusinessSolutionsEnterpriseNewsletterRoute
+  '/business-solutions/government-activities-advocacy': typeof BusinessSolutionsGovernmentActivitiesAdvocacyRoute
+  '/business-solutions/human-resources': typeof BusinessSolutionsHumanResourcesRoute
+  '/business-solutions/non-profits': typeof BusinessSolutionsNonProfitsRoute
+  '/business-solutions/pmp-project-management-certification': typeof BusinessSolutionsPmpProjectManagementCertificationRoute
+  '/business-solutions/talent-management': typeof BusinessSolutionsTalentManagementRoute
+  '/business-solutions/the-global-executive-council': typeof BusinessSolutionsTheGlobalExecutiveCouncilRoute
+  '/business-solutions/transformation': typeof BusinessSolutionsTransformationRoute
+  '/certifications/$slug': typeof CertificationsSlugRoute
   '/dashboard/certifications': typeof DashboardCertificationsRoute
   '/dashboard/contact-responses': typeof DashboardContactResponsesRoute
+  '/events/$slug': typeof EventsSlugRoute
+  '/events/events-group-registration': typeof EventsEventsGroupRegistrationRoute
+  '/events/speaking-opportunities': typeof EventsSpeakingOpportunitiesRoute
+  '/learning/academic-programs': typeof LearningAcademicProgramsRoute
+  '/learning/academic-sponsored-research': typeof LearningAcademicSponsoredResearchRoute
+  '/learning/brightline': typeof LearningBrightlineRoute
+  '/learning/exam-prep': typeof LearningExamPrepRoute
+  '/learning/foundations-of-project-management': typeof LearningFoundationsOfProjectManagementRoute
+  '/learning/free-online-courses': typeof LearningFreeOnlineCoursesRoute
+  '/learning/instructor-led-training': typeof LearningInstructorLedTrainingRoute
+  '/learning/online-courses': typeof LearningOnlineCoursesRoute
+  '/learning/pmi-training': typeof LearningPmiTrainingRoute
+  '/learning/project-management-journal': typeof LearningProjectManagementJournalRoute
+  '/learning/thought-leadership': typeof LearningThoughtLeadershipRoute
+  '/learning/webinars': typeof LearningWebinarsRoute
+  '/membership/chapters': typeof MembershipChaptersRoute
+  '/membership/gift': typeof MembershipGiftRoute
+  '/membership/professional': typeof MembershipProfessionalRoute
+  '/membership/student': typeof MembershipStudentRoute
+  '/about/': typeof AboutIndexRoute
+  '/blog/': typeof BlogIndexRoute
+  '/business-solutions': typeof BusinessSolutionsIndexRoute
+  '/certifications': typeof CertificationsIndexRoute
+  '/events': typeof EventsIndexRoute
+  '/business-solutions/commercial-partners/$slug': typeof BusinessSolutionsCommercialPartnersSlugRoute
+  '/business-solutions/commercial-partners/enterprise-membership': typeof BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute
+  '/business-solutions/commercial-partners/pmi-infinity-for-organizations': typeof BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute
+  '/certifications/certification-resources/$slug': typeof CertificationsCertificationResourcesSlugRoute
+  '/business-solutions/commercial-partners/': typeof BusinessSolutionsCommercialPartnersIndexRoute
+  '/certifications/certification-resources': typeof CertificationsCertificationResourcesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
+  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
-  '/blogs': typeof BlogsRoute
-  '/careers': typeof CareersRoute
-  '/certification-process': typeof CertificationProcessRoute
-  '/certifications': typeof CertificationsRoute
-  '/community-latest': typeof CommunityLatestRoute
+  '/ai-today-podcast': typeof AiTodayPodcastRoute
+  '/career-navigator': typeof CareerNavigatorRoute
+  '/career-resources': typeof CareerResourcesRoute
   '/contact': typeof ContactRoute
-  '/discussions': typeof DiscussionsRoute
-  '/elearning-gifts': typeof ElearningGiftsRoute
-  '/enterprise-partners': typeof EnterprisePartnersRoute
-  '/events': typeof EventsRoute
-  '/local-chapters': typeof LocalChaptersRoute
-  '/membership': typeof MembershipRoute
-  '/membership-faqs': typeof MembershipFaqsRoute
-  '/online-courses': typeof OnlineCoursesRoute
-  '/pmbok-guide': typeof PmbokGuideRoute
-  '/pmi-blog': typeof PmiBlogRoute
-  '/press': typeof PressRoute
+  '/infinity': typeof InfinityRoute
+  '/insights': typeof InsightsRoute
+  '/login': typeof LoginRoute
+  '/membership': typeof MembershipRouteWithChildren
+  '/military': typeof MilitaryRoute
   '/privacy': typeof PrivacyRoute
+  '/projectified-podcast': typeof ProjectifiedPodcastRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/report-pdus': typeof ReportPdusRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
-  '/store': typeof StoreRoute
-  '/store-help': typeof StoreHelpRoute
-  '/templates': typeof TemplatesRoute
-  '/terms': typeof TermsRoute
-  '/training-partners': typeof TrainingPartnersRoute
-  '/webinars': typeof WebinarsRoute
-  '/what-is-pm': typeof WhatIsPmRoute
+  '/terms-of-use': typeof TermsOfUseRoute
+  '/the-shift-code-podcast': typeof TheShiftCodePodcastRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/business-solutions/$slug': typeof BusinessSolutionsSlugRoute
+  '/business-solutions/academic-institutions': typeof BusinessSolutionsAcademicInstitutionsRoute
+  '/business-solutions/agile-technical-solutions': typeof BusinessSolutionsAgileTechnicalSolutionsRoute
+  '/business-solutions/case-studies': typeof BusinessSolutionsCaseStudiesRoute
+  '/business-solutions/construction': typeof BusinessSolutionsConstructionRoute
+  '/business-solutions/enterprise-newsletter': typeof BusinessSolutionsEnterpriseNewsletterRoute
+  '/business-solutions/government-activities-advocacy': typeof BusinessSolutionsGovernmentActivitiesAdvocacyRoute
+  '/business-solutions/human-resources': typeof BusinessSolutionsHumanResourcesRoute
+  '/business-solutions/non-profits': typeof BusinessSolutionsNonProfitsRoute
+  '/business-solutions/pmp-project-management-certification': typeof BusinessSolutionsPmpProjectManagementCertificationRoute
+  '/business-solutions/talent-management': typeof BusinessSolutionsTalentManagementRoute
+  '/business-solutions/the-global-executive-council': typeof BusinessSolutionsTheGlobalExecutiveCouncilRoute
+  '/business-solutions/transformation': typeof BusinessSolutionsTransformationRoute
+  '/certifications/$slug': typeof CertificationsSlugRoute
   '/dashboard/certifications': typeof DashboardCertificationsRoute
   '/dashboard/contact-responses': typeof DashboardContactResponsesRoute
+  '/events/$slug': typeof EventsSlugRoute
+  '/events/events-group-registration': typeof EventsEventsGroupRegistrationRoute
+  '/events/speaking-opportunities': typeof EventsSpeakingOpportunitiesRoute
+  '/learning/academic-programs': typeof LearningAcademicProgramsRoute
+  '/learning/academic-sponsored-research': typeof LearningAcademicSponsoredResearchRoute
+  '/learning/brightline': typeof LearningBrightlineRoute
+  '/learning/exam-prep': typeof LearningExamPrepRoute
+  '/learning/foundations-of-project-management': typeof LearningFoundationsOfProjectManagementRoute
+  '/learning/free-online-courses': typeof LearningFreeOnlineCoursesRoute
+  '/learning/instructor-led-training': typeof LearningInstructorLedTrainingRoute
+  '/learning/online-courses': typeof LearningOnlineCoursesRoute
+  '/learning/pmi-training': typeof LearningPmiTrainingRoute
+  '/learning/project-management-journal': typeof LearningProjectManagementJournalRoute
+  '/learning/thought-leadership': typeof LearningThoughtLeadershipRoute
+  '/learning/webinars': typeof LearningWebinarsRoute
+  '/membership/chapters': typeof MembershipChaptersRoute
+  '/membership/gift': typeof MembershipGiftRoute
+  '/membership/professional': typeof MembershipProfessionalRoute
+  '/membership/student': typeof MembershipStudentRoute
+  '/about': typeof AboutIndexRoute
+  '/blog': typeof BlogIndexRoute
+  '/business-solutions': typeof BusinessSolutionsIndexRoute
+  '/certifications': typeof CertificationsIndexRoute
+  '/events': typeof EventsIndexRoute
+  '/business-solutions/commercial-partners/$slug': typeof BusinessSolutionsCommercialPartnersSlugRoute
+  '/business-solutions/commercial-partners/enterprise-membership': typeof BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute
+  '/business-solutions/commercial-partners/pmi-infinity-for-organizations': typeof BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute
+  '/certifications/certification-resources/$slug': typeof CertificationsCertificationResourcesSlugRoute
+  '/business-solutions/commercial-partners': typeof BusinessSolutionsCommercialPartnersIndexRoute
+  '/certifications/certification-resources': typeof CertificationsCertificationResourcesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
+  '/about': typeof AboutRouteWithChildren
+  '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
-  '/blogs': typeof BlogsRoute
-  '/careers': typeof CareersRoute
-  '/certification-process': typeof CertificationProcessRoute
-  '/certifications': typeof CertificationsRoute
-  '/community-latest': typeof CommunityLatestRoute
+  '/ai-today-podcast': typeof AiTodayPodcastRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/career-navigator': typeof CareerNavigatorRoute
+  '/career-resources': typeof CareerResourcesRoute
   '/contact': typeof ContactRoute
-  '/discussions': typeof DiscussionsRoute
-  '/elearning-gifts': typeof ElearningGiftsRoute
-  '/enterprise-partners': typeof EnterprisePartnersRoute
-  '/events': typeof EventsRoute
-  '/local-chapters': typeof LocalChaptersRoute
-  '/membership': typeof MembershipRoute
-  '/membership-faqs': typeof MembershipFaqsRoute
-  '/online-courses': typeof OnlineCoursesRoute
-  '/pmbok-guide': typeof PmbokGuideRoute
-  '/pmi-blog': typeof PmiBlogRoute
-  '/press': typeof PressRoute
+  '/infinity': typeof InfinityRoute
+  '/insights': typeof InsightsRoute
+  '/login': typeof LoginRoute
+  '/membership': typeof MembershipRouteWithChildren
+  '/military': typeof MilitaryRoute
   '/privacy': typeof PrivacyRoute
+  '/projectified-podcast': typeof ProjectifiedPodcastRoute
   '/purchasing-terms': typeof PurchasingTermsRoute
   '/refund-policy': typeof RefundPolicyRoute
-  '/report-pdus': typeof ReportPdusRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
-  '/store': typeof StoreRoute
-  '/store-help': typeof StoreHelpRoute
-  '/templates': typeof TemplatesRoute
-  '/terms': typeof TermsRoute
-  '/training-partners': typeof TrainingPartnersRoute
-  '/webinars': typeof WebinarsRoute
-  '/what-is-pm': typeof WhatIsPmRoute
+  '/terms-of-use': typeof TermsOfUseRoute
+  '/the-shift-code-podcast': typeof TheShiftCodePodcastRoute
+  '/blog/$slug': typeof BlogSlugRoute
+  '/business-solutions/$slug': typeof BusinessSolutionsSlugRoute
+  '/business-solutions/academic-institutions': typeof BusinessSolutionsAcademicInstitutionsRoute
+  '/business-solutions/agile-technical-solutions': typeof BusinessSolutionsAgileTechnicalSolutionsRoute
+  '/business-solutions/case-studies': typeof BusinessSolutionsCaseStudiesRoute
+  '/business-solutions/commercial-partners': typeof BusinessSolutionsCommercialPartnersRouteWithChildren
+  '/business-solutions/construction': typeof BusinessSolutionsConstructionRoute
+  '/business-solutions/enterprise-newsletter': typeof BusinessSolutionsEnterpriseNewsletterRoute
+  '/business-solutions/government-activities-advocacy': typeof BusinessSolutionsGovernmentActivitiesAdvocacyRoute
+  '/business-solutions/human-resources': typeof BusinessSolutionsHumanResourcesRoute
+  '/business-solutions/non-profits': typeof BusinessSolutionsNonProfitsRoute
+  '/business-solutions/pmp-project-management-certification': typeof BusinessSolutionsPmpProjectManagementCertificationRoute
+  '/business-solutions/talent-management': typeof BusinessSolutionsTalentManagementRoute
+  '/business-solutions/the-global-executive-council': typeof BusinessSolutionsTheGlobalExecutiveCouncilRoute
+  '/business-solutions/transformation': typeof BusinessSolutionsTransformationRoute
+  '/certifications/$slug': typeof CertificationsSlugRoute
   '/dashboard/certifications': typeof DashboardCertificationsRoute
   '/dashboard/contact-responses': typeof DashboardContactResponsesRoute
+  '/events/$slug': typeof EventsSlugRoute
+  '/events/events-group-registration': typeof EventsEventsGroupRegistrationRoute
+  '/events/speaking-opportunities': typeof EventsSpeakingOpportunitiesRoute
+  '/learning/academic-programs': typeof LearningAcademicProgramsRoute
+  '/learning/academic-sponsored-research': typeof LearningAcademicSponsoredResearchRoute
+  '/learning/brightline': typeof LearningBrightlineRoute
+  '/learning/exam-prep': typeof LearningExamPrepRoute
+  '/learning/foundations-of-project-management': typeof LearningFoundationsOfProjectManagementRoute
+  '/learning/free-online-courses': typeof LearningFreeOnlineCoursesRoute
+  '/learning/instructor-led-training': typeof LearningInstructorLedTrainingRoute
+  '/learning/online-courses': typeof LearningOnlineCoursesRoute
+  '/learning/pmi-training': typeof LearningPmiTrainingRoute
+  '/learning/project-management-journal': typeof LearningProjectManagementJournalRoute
+  '/learning/thought-leadership': typeof LearningThoughtLeadershipRoute
+  '/learning/webinars': typeof LearningWebinarsRoute
+  '/membership/chapters': typeof MembershipChaptersRoute
+  '/membership/gift': typeof MembershipGiftRoute
+  '/membership/professional': typeof MembershipProfessionalRoute
+  '/membership/student': typeof MembershipStudentRoute
+  '/about/': typeof AboutIndexRoute
+  '/blog/': typeof BlogIndexRoute
+  '/business-solutions/': typeof BusinessSolutionsIndexRoute
+  '/certifications/': typeof CertificationsIndexRoute
+  '/events/': typeof EventsIndexRoute
+  '/business-solutions/commercial-partners/$slug': typeof BusinessSolutionsCommercialPartnersSlugRoute
+  '/business-solutions/commercial-partners/enterprise-membership': typeof BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute
+  '/business-solutions/commercial-partners/pmi-infinity-for-organizations': typeof BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute
+  '/certifications/certification-resources/$slug': typeof CertificationsCertificationResourcesSlugRoute
+  '/business-solutions/commercial-partners/': typeof BusinessSolutionsCommercialPartnersIndexRoute
+  '/certifications/certification-resources/': typeof CertificationsCertificationResourcesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
+    | '/accessibility'
     | '/advertising'
-    | '/blogs'
-    | '/careers'
-    | '/certification-process'
-    | '/certifications'
-    | '/community-latest'
+    | '/ai-today-podcast'
+    | '/blog'
+    | '/career-navigator'
+    | '/career-resources'
     | '/contact'
-    | '/discussions'
-    | '/elearning-gifts'
-    | '/enterprise-partners'
-    | '/events'
-    | '/local-chapters'
+    | '/infinity'
+    | '/insights'
+    | '/login'
     | '/membership'
-    | '/membership-faqs'
-    | '/online-courses'
-    | '/pmbok-guide'
-    | '/pmi-blog'
-    | '/press'
+    | '/military'
     | '/privacy'
+    | '/projectified-podcast'
     | '/purchasing-terms'
     | '/refund-policy'
-    | '/report-pdus'
+    | '/signup'
     | '/sitemap'
-    | '/store'
-    | '/store-help'
-    | '/templates'
-    | '/terms'
-    | '/training-partners'
-    | '/webinars'
-    | '/what-is-pm'
+    | '/terms-of-use'
+    | '/the-shift-code-podcast'
+    | '/blog/$slug'
+    | '/business-solutions/$slug'
+    | '/business-solutions/academic-institutions'
+    | '/business-solutions/agile-technical-solutions'
+    | '/business-solutions/case-studies'
+    | '/business-solutions/commercial-partners'
+    | '/business-solutions/construction'
+    | '/business-solutions/enterprise-newsletter'
+    | '/business-solutions/government-activities-advocacy'
+    | '/business-solutions/human-resources'
+    | '/business-solutions/non-profits'
+    | '/business-solutions/pmp-project-management-certification'
+    | '/business-solutions/talent-management'
+    | '/business-solutions/the-global-executive-council'
+    | '/business-solutions/transformation'
+    | '/certifications/$slug'
     | '/dashboard/certifications'
     | '/dashboard/contact-responses'
+    | '/events/$slug'
+    | '/events/events-group-registration'
+    | '/events/speaking-opportunities'
+    | '/learning/academic-programs'
+    | '/learning/academic-sponsored-research'
+    | '/learning/brightline'
+    | '/learning/exam-prep'
+    | '/learning/foundations-of-project-management'
+    | '/learning/free-online-courses'
+    | '/learning/instructor-led-training'
+    | '/learning/online-courses'
+    | '/learning/pmi-training'
+    | '/learning/project-management-journal'
+    | '/learning/thought-leadership'
+    | '/learning/webinars'
+    | '/membership/chapters'
+    | '/membership/gift'
+    | '/membership/professional'
+    | '/membership/student'
+    | '/about/'
+    | '/blog/'
+    | '/business-solutions'
+    | '/certifications'
+    | '/events'
+    | '/business-solutions/commercial-partners/$slug'
+    | '/business-solutions/commercial-partners/enterprise-membership'
+    | '/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+    | '/certifications/certification-resources/$slug'
+    | '/business-solutions/commercial-partners/'
+    | '/certifications/certification-resources'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
+    | '/accessibility'
     | '/advertising'
-    | '/blogs'
-    | '/careers'
-    | '/certification-process'
-    | '/certifications'
-    | '/community-latest'
+    | '/ai-today-podcast'
+    | '/career-navigator'
+    | '/career-resources'
     | '/contact'
-    | '/discussions'
-    | '/elearning-gifts'
-    | '/enterprise-partners'
-    | '/events'
-    | '/local-chapters'
+    | '/infinity'
+    | '/insights'
+    | '/login'
     | '/membership'
-    | '/membership-faqs'
-    | '/online-courses'
-    | '/pmbok-guide'
-    | '/pmi-blog'
-    | '/press'
+    | '/military'
     | '/privacy'
+    | '/projectified-podcast'
     | '/purchasing-terms'
     | '/refund-policy'
-    | '/report-pdus'
+    | '/signup'
     | '/sitemap'
-    | '/store'
-    | '/store-help'
-    | '/templates'
-    | '/terms'
-    | '/training-partners'
-    | '/webinars'
-    | '/what-is-pm'
+    | '/terms-of-use'
+    | '/the-shift-code-podcast'
+    | '/blog/$slug'
+    | '/business-solutions/$slug'
+    | '/business-solutions/academic-institutions'
+    | '/business-solutions/agile-technical-solutions'
+    | '/business-solutions/case-studies'
+    | '/business-solutions/construction'
+    | '/business-solutions/enterprise-newsletter'
+    | '/business-solutions/government-activities-advocacy'
+    | '/business-solutions/human-resources'
+    | '/business-solutions/non-profits'
+    | '/business-solutions/pmp-project-management-certification'
+    | '/business-solutions/talent-management'
+    | '/business-solutions/the-global-executive-council'
+    | '/business-solutions/transformation'
+    | '/certifications/$slug'
     | '/dashboard/certifications'
     | '/dashboard/contact-responses'
+    | '/events/$slug'
+    | '/events/events-group-registration'
+    | '/events/speaking-opportunities'
+    | '/learning/academic-programs'
+    | '/learning/academic-sponsored-research'
+    | '/learning/brightline'
+    | '/learning/exam-prep'
+    | '/learning/foundations-of-project-management'
+    | '/learning/free-online-courses'
+    | '/learning/instructor-led-training'
+    | '/learning/online-courses'
+    | '/learning/pmi-training'
+    | '/learning/project-management-journal'
+    | '/learning/thought-leadership'
+    | '/learning/webinars'
+    | '/membership/chapters'
+    | '/membership/gift'
+    | '/membership/professional'
+    | '/membership/student'
+    | '/about'
+    | '/blog'
+    | '/business-solutions'
+    | '/certifications'
+    | '/events'
+    | '/business-solutions/commercial-partners/$slug'
+    | '/business-solutions/commercial-partners/enterprise-membership'
+    | '/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+    | '/certifications/certification-resources/$slug'
+    | '/business-solutions/commercial-partners'
+    | '/certifications/certification-resources'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/accessibility'
     | '/advertising'
-    | '/blogs'
-    | '/careers'
-    | '/certification-process'
-    | '/certifications'
-    | '/community-latest'
+    | '/ai-today-podcast'
+    | '/blog'
+    | '/career-navigator'
+    | '/career-resources'
     | '/contact'
-    | '/discussions'
-    | '/elearning-gifts'
-    | '/enterprise-partners'
-    | '/events'
-    | '/local-chapters'
+    | '/infinity'
+    | '/insights'
+    | '/login'
     | '/membership'
-    | '/membership-faqs'
-    | '/online-courses'
-    | '/pmbok-guide'
-    | '/pmi-blog'
-    | '/press'
+    | '/military'
     | '/privacy'
+    | '/projectified-podcast'
     | '/purchasing-terms'
     | '/refund-policy'
-    | '/report-pdus'
+    | '/signup'
     | '/sitemap'
-    | '/store'
-    | '/store-help'
-    | '/templates'
-    | '/terms'
-    | '/training-partners'
-    | '/webinars'
-    | '/what-is-pm'
+    | '/terms-of-use'
+    | '/the-shift-code-podcast'
+    | '/blog/$slug'
+    | '/business-solutions/$slug'
+    | '/business-solutions/academic-institutions'
+    | '/business-solutions/agile-technical-solutions'
+    | '/business-solutions/case-studies'
+    | '/business-solutions/commercial-partners'
+    | '/business-solutions/construction'
+    | '/business-solutions/enterprise-newsletter'
+    | '/business-solutions/government-activities-advocacy'
+    | '/business-solutions/human-resources'
+    | '/business-solutions/non-profits'
+    | '/business-solutions/pmp-project-management-certification'
+    | '/business-solutions/talent-management'
+    | '/business-solutions/the-global-executive-council'
+    | '/business-solutions/transformation'
+    | '/certifications/$slug'
     | '/dashboard/certifications'
     | '/dashboard/contact-responses'
+    | '/events/$slug'
+    | '/events/events-group-registration'
+    | '/events/speaking-opportunities'
+    | '/learning/academic-programs'
+    | '/learning/academic-sponsored-research'
+    | '/learning/brightline'
+    | '/learning/exam-prep'
+    | '/learning/foundations-of-project-management'
+    | '/learning/free-online-courses'
+    | '/learning/instructor-led-training'
+    | '/learning/online-courses'
+    | '/learning/pmi-training'
+    | '/learning/project-management-journal'
+    | '/learning/thought-leadership'
+    | '/learning/webinars'
+    | '/membership/chapters'
+    | '/membership/gift'
+    | '/membership/professional'
+    | '/membership/student'
+    | '/about/'
+    | '/blog/'
+    | '/business-solutions/'
+    | '/certifications/'
+    | '/events/'
+    | '/business-solutions/commercial-partners/$slug'
+    | '/business-solutions/commercial-partners/enterprise-membership'
+    | '/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+    | '/certifications/certification-resources/$slug'
+    | '/business-solutions/commercial-partners/'
+    | '/certifications/certification-resources/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
+  AboutRoute: typeof AboutRouteWithChildren
+  AccessibilityRoute: typeof AccessibilityRoute
   AdvertisingRoute: typeof AdvertisingRoute
-  BlogsRoute: typeof BlogsRoute
-  CareersRoute: typeof CareersRoute
-  CertificationProcessRoute: typeof CertificationProcessRoute
-  CertificationsRoute: typeof CertificationsRoute
-  CommunityLatestRoute: typeof CommunityLatestRoute
+  AiTodayPodcastRoute: typeof AiTodayPodcastRoute
+  BlogRoute: typeof BlogRouteWithChildren
+  CareerNavigatorRoute: typeof CareerNavigatorRoute
+  CareerResourcesRoute: typeof CareerResourcesRoute
   ContactRoute: typeof ContactRoute
-  DiscussionsRoute: typeof DiscussionsRoute
-  ElearningGiftsRoute: typeof ElearningGiftsRoute
-  EnterprisePartnersRoute: typeof EnterprisePartnersRoute
-  EventsRoute: typeof EventsRoute
-  LocalChaptersRoute: typeof LocalChaptersRoute
-  MembershipRoute: typeof MembershipRoute
-  MembershipFaqsRoute: typeof MembershipFaqsRoute
-  OnlineCoursesRoute: typeof OnlineCoursesRoute
-  PmbokGuideRoute: typeof PmbokGuideRoute
-  PmiBlogRoute: typeof PmiBlogRoute
-  PressRoute: typeof PressRoute
+  InfinityRoute: typeof InfinityRoute
+  InsightsRoute: typeof InsightsRoute
+  LoginRoute: typeof LoginRoute
+  MembershipRoute: typeof MembershipRouteWithChildren
+  MilitaryRoute: typeof MilitaryRoute
   PrivacyRoute: typeof PrivacyRoute
+  ProjectifiedPodcastRoute: typeof ProjectifiedPodcastRoute
   PurchasingTermsRoute: typeof PurchasingTermsRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
-  ReportPdusRoute: typeof ReportPdusRoute
+  SignupRoute: typeof SignupRoute
   SitemapRoute: typeof SitemapRoute
-  StoreRoute: typeof StoreRoute
-  StoreHelpRoute: typeof StoreHelpRoute
-  TemplatesRoute: typeof TemplatesRoute
-  TermsRoute: typeof TermsRoute
-  TrainingPartnersRoute: typeof TrainingPartnersRoute
-  WebinarsRoute: typeof WebinarsRoute
-  WhatIsPmRoute: typeof WhatIsPmRoute
+  TermsOfUseRoute: typeof TermsOfUseRoute
+  TheShiftCodePodcastRoute: typeof TheShiftCodePodcastRoute
+  BusinessSolutionsSlugRoute: typeof BusinessSolutionsSlugRoute
+  BusinessSolutionsAcademicInstitutionsRoute: typeof BusinessSolutionsAcademicInstitutionsRoute
+  BusinessSolutionsAgileTechnicalSolutionsRoute: typeof BusinessSolutionsAgileTechnicalSolutionsRoute
+  BusinessSolutionsCaseStudiesRoute: typeof BusinessSolutionsCaseStudiesRoute
+  BusinessSolutionsCommercialPartnersRoute: typeof BusinessSolutionsCommercialPartnersRouteWithChildren
+  BusinessSolutionsConstructionRoute: typeof BusinessSolutionsConstructionRoute
+  BusinessSolutionsEnterpriseNewsletterRoute: typeof BusinessSolutionsEnterpriseNewsletterRoute
+  BusinessSolutionsGovernmentActivitiesAdvocacyRoute: typeof BusinessSolutionsGovernmentActivitiesAdvocacyRoute
+  BusinessSolutionsHumanResourcesRoute: typeof BusinessSolutionsHumanResourcesRoute
+  BusinessSolutionsNonProfitsRoute: typeof BusinessSolutionsNonProfitsRoute
+  BusinessSolutionsPmpProjectManagementCertificationRoute: typeof BusinessSolutionsPmpProjectManagementCertificationRoute
+  BusinessSolutionsTalentManagementRoute: typeof BusinessSolutionsTalentManagementRoute
+  BusinessSolutionsTheGlobalExecutiveCouncilRoute: typeof BusinessSolutionsTheGlobalExecutiveCouncilRoute
+  BusinessSolutionsTransformationRoute: typeof BusinessSolutionsTransformationRoute
+  CertificationsSlugRoute: typeof CertificationsSlugRoute
   DashboardCertificationsRoute: typeof DashboardCertificationsRoute
   DashboardContactResponsesRoute: typeof DashboardContactResponsesRoute
+  EventsSlugRoute: typeof EventsSlugRoute
+  EventsEventsGroupRegistrationRoute: typeof EventsEventsGroupRegistrationRoute
+  EventsSpeakingOpportunitiesRoute: typeof EventsSpeakingOpportunitiesRoute
+  LearningAcademicProgramsRoute: typeof LearningAcademicProgramsRoute
+  LearningAcademicSponsoredResearchRoute: typeof LearningAcademicSponsoredResearchRoute
+  LearningBrightlineRoute: typeof LearningBrightlineRoute
+  LearningExamPrepRoute: typeof LearningExamPrepRoute
+  LearningFoundationsOfProjectManagementRoute: typeof LearningFoundationsOfProjectManagementRoute
+  LearningFreeOnlineCoursesRoute: typeof LearningFreeOnlineCoursesRoute
+  LearningInstructorLedTrainingRoute: typeof LearningInstructorLedTrainingRoute
+  LearningOnlineCoursesRoute: typeof LearningOnlineCoursesRoute
+  LearningPmiTrainingRoute: typeof LearningPmiTrainingRoute
+  LearningProjectManagementJournalRoute: typeof LearningProjectManagementJournalRoute
+  LearningThoughtLeadershipRoute: typeof LearningThoughtLeadershipRoute
+  LearningWebinarsRoute: typeof LearningWebinarsRoute
+  BusinessSolutionsIndexRoute: typeof BusinessSolutionsIndexRoute
+  CertificationsIndexRoute: typeof CertificationsIndexRoute
+  EventsIndexRoute: typeof EventsIndexRoute
+  CertificationsCertificationResourcesSlugRoute: typeof CertificationsCertificationResourcesSlugRoute
+  CertificationsCertificationResourcesIndexRoute: typeof CertificationsCertificationResourcesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/what-is-pm': {
-      id: '/what-is-pm'
-      path: '/what-is-pm'
-      fullPath: '/what-is-pm'
-      preLoaderRoute: typeof WhatIsPmRouteImport
+    '/the-shift-code-podcast': {
+      id: '/the-shift-code-podcast'
+      path: '/the-shift-code-podcast'
+      fullPath: '/the-shift-code-podcast'
+      preLoaderRoute: typeof TheShiftCodePodcastRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/webinars': {
-      id: '/webinars'
-      path: '/webinars'
-      fullPath: '/webinars'
-      preLoaderRoute: typeof WebinarsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/training-partners': {
-      id: '/training-partners'
-      path: '/training-partners'
-      fullPath: '/training-partners'
-      preLoaderRoute: typeof TrainingPartnersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/templates': {
-      id: '/templates'
-      path: '/templates'
-      fullPath: '/templates'
-      preLoaderRoute: typeof TemplatesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/store-help': {
-      id: '/store-help'
-      path: '/store-help'
-      fullPath: '/store-help'
-      preLoaderRoute: typeof StoreHelpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/store': {
-      id: '/store'
-      path: '/store'
-      fullPath: '/store'
-      preLoaderRoute: typeof StoreRouteImport
+    '/terms-of-use': {
+      id: '/terms-of-use'
+      path: '/terms-of-use'
+      fullPath: '/terms-of-use'
+      preLoaderRoute: typeof TermsOfUseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap': {
@@ -531,11 +977,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/report-pdus': {
-      id: '/report-pdus'
-      path: '/report-pdus'
-      fullPath: '/report-pdus'
-      preLoaderRoute: typeof ReportPdusRouteImport
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/refund-policy': {
@@ -552,6 +998,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PurchasingTermsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projectified-podcast': {
+      id: '/projectified-podcast'
+      path: '/projectified-podcast'
+      fullPath: '/projectified-podcast'
+      preLoaderRoute: typeof ProjectifiedPodcastRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
@@ -559,39 +1012,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/press': {
-      id: '/press'
-      path: '/press'
-      fullPath: '/press'
-      preLoaderRoute: typeof PressRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pmi-blog': {
-      id: '/pmi-blog'
-      path: '/pmi-blog'
-      fullPath: '/pmi-blog'
-      preLoaderRoute: typeof PmiBlogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pmbok-guide': {
-      id: '/pmbok-guide'
-      path: '/pmbok-guide'
-      fullPath: '/pmbok-guide'
-      preLoaderRoute: typeof PmbokGuideRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/online-courses': {
-      id: '/online-courses'
-      path: '/online-courses'
-      fullPath: '/online-courses'
-      preLoaderRoute: typeof OnlineCoursesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/membership-faqs': {
-      id: '/membership-faqs'
-      path: '/membership-faqs'
-      fullPath: '/membership-faqs'
-      preLoaderRoute: typeof MembershipFaqsRouteImport
+    '/military': {
+      id: '/military'
+      path: '/military'
+      fullPath: '/military'
+      preLoaderRoute: typeof MilitaryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/membership': {
@@ -601,39 +1026,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MembershipRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/local-chapters': {
-      id: '/local-chapters'
-      path: '/local-chapters'
-      fullPath: '/local-chapters'
-      preLoaderRoute: typeof LocalChaptersRouteImport
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/events': {
-      id: '/events'
-      path: '/events'
-      fullPath: '/events'
-      preLoaderRoute: typeof EventsRouteImport
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/enterprise-partners': {
-      id: '/enterprise-partners'
-      path: '/enterprise-partners'
-      fullPath: '/enterprise-partners'
-      preLoaderRoute: typeof EnterprisePartnersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/elearning-gifts': {
-      id: '/elearning-gifts'
-      path: '/elearning-gifts'
-      fullPath: '/elearning-gifts'
-      preLoaderRoute: typeof ElearningGiftsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/discussions': {
-      id: '/discussions'
-      path: '/discussions'
-      fullPath: '/discussions'
-      preLoaderRoute: typeof DiscussionsRouteImport
+    '/infinity': {
+      id: '/infinity'
+      path: '/infinity'
+      fullPath: '/infinity'
+      preLoaderRoute: typeof InfinityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -643,39 +1054,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/community-latest': {
-      id: '/community-latest'
-      path: '/community-latest'
-      fullPath: '/community-latest'
-      preLoaderRoute: typeof CommunityLatestRouteImport
+    '/career-resources': {
+      id: '/career-resources'
+      path: '/career-resources'
+      fullPath: '/career-resources'
+      preLoaderRoute: typeof CareerResourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/certifications': {
-      id: '/certifications'
-      path: '/certifications'
-      fullPath: '/certifications'
-      preLoaderRoute: typeof CertificationsRouteImport
+    '/career-navigator': {
+      id: '/career-navigator'
+      path: '/career-navigator'
+      fullPath: '/career-navigator'
+      preLoaderRoute: typeof CareerNavigatorRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/certification-process': {
-      id: '/certification-process'
-      path: '/certification-process'
-      fullPath: '/certification-process'
-      preLoaderRoute: typeof CertificationProcessRouteImport
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/careers': {
-      id: '/careers'
-      path: '/careers'
-      fullPath: '/careers'
-      preLoaderRoute: typeof CareersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blogs': {
-      id: '/blogs'
-      path: '/blogs'
-      fullPath: '/blogs'
-      preLoaderRoute: typeof BlogsRouteImport
+    '/ai-today-podcast': {
+      id: '/ai-today-podcast'
+      path: '/ai-today-podcast'
+      fullPath: '/ai-today-podcast'
+      preLoaderRoute: typeof AiTodayPodcastRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/advertising': {
@@ -683,6 +1087,13 @@ declare module '@tanstack/react-router' {
       path: '/advertising'
       fullPath: '/advertising'
       preLoaderRoute: typeof AdvertisingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accessibility': {
+      id: '/accessibility'
+      path: '/accessibility'
+      fullPath: '/accessibility'
+      preLoaderRoute: typeof AccessibilityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -699,6 +1110,174 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/events/': {
+      id: '/events/'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/certifications/': {
+      id: '/certifications/'
+      path: '/certifications'
+      fullPath: '/certifications'
+      preLoaderRoute: typeof CertificationsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/': {
+      id: '/business-solutions/'
+      path: '/business-solutions'
+      fullPath: '/business-solutions'
+      preLoaderRoute: typeof BusinessSolutionsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/about/': {
+      id: '/about/'
+      path: '/'
+      fullPath: '/about/'
+      preLoaderRoute: typeof AboutIndexRouteImport
+      parentRoute: typeof AboutRoute
+    }
+    '/membership/student': {
+      id: '/membership/student'
+      path: '/student'
+      fullPath: '/membership/student'
+      preLoaderRoute: typeof MembershipStudentRouteImport
+      parentRoute: typeof MembershipRoute
+    }
+    '/membership/professional': {
+      id: '/membership/professional'
+      path: '/professional'
+      fullPath: '/membership/professional'
+      preLoaderRoute: typeof MembershipProfessionalRouteImport
+      parentRoute: typeof MembershipRoute
+    }
+    '/membership/gift': {
+      id: '/membership/gift'
+      path: '/gift'
+      fullPath: '/membership/gift'
+      preLoaderRoute: typeof MembershipGiftRouteImport
+      parentRoute: typeof MembershipRoute
+    }
+    '/membership/chapters': {
+      id: '/membership/chapters'
+      path: '/chapters'
+      fullPath: '/membership/chapters'
+      preLoaderRoute: typeof MembershipChaptersRouteImport
+      parentRoute: typeof MembershipRoute
+    }
+    '/learning/webinars': {
+      id: '/learning/webinars'
+      path: '/learning/webinars'
+      fullPath: '/learning/webinars'
+      preLoaderRoute: typeof LearningWebinarsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/thought-leadership': {
+      id: '/learning/thought-leadership'
+      path: '/learning/thought-leadership'
+      fullPath: '/learning/thought-leadership'
+      preLoaderRoute: typeof LearningThoughtLeadershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/project-management-journal': {
+      id: '/learning/project-management-journal'
+      path: '/learning/project-management-journal'
+      fullPath: '/learning/project-management-journal'
+      preLoaderRoute: typeof LearningProjectManagementJournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/pmi-training': {
+      id: '/learning/pmi-training'
+      path: '/learning/pmi-training'
+      fullPath: '/learning/pmi-training'
+      preLoaderRoute: typeof LearningPmiTrainingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/online-courses': {
+      id: '/learning/online-courses'
+      path: '/learning/online-courses'
+      fullPath: '/learning/online-courses'
+      preLoaderRoute: typeof LearningOnlineCoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/instructor-led-training': {
+      id: '/learning/instructor-led-training'
+      path: '/learning/instructor-led-training'
+      fullPath: '/learning/instructor-led-training'
+      preLoaderRoute: typeof LearningInstructorLedTrainingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/free-online-courses': {
+      id: '/learning/free-online-courses'
+      path: '/learning/free-online-courses'
+      fullPath: '/learning/free-online-courses'
+      preLoaderRoute: typeof LearningFreeOnlineCoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/foundations-of-project-management': {
+      id: '/learning/foundations-of-project-management'
+      path: '/learning/foundations-of-project-management'
+      fullPath: '/learning/foundations-of-project-management'
+      preLoaderRoute: typeof LearningFoundationsOfProjectManagementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/exam-prep': {
+      id: '/learning/exam-prep'
+      path: '/learning/exam-prep'
+      fullPath: '/learning/exam-prep'
+      preLoaderRoute: typeof LearningExamPrepRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/brightline': {
+      id: '/learning/brightline'
+      path: '/learning/brightline'
+      fullPath: '/learning/brightline'
+      preLoaderRoute: typeof LearningBrightlineRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/academic-sponsored-research': {
+      id: '/learning/academic-sponsored-research'
+      path: '/learning/academic-sponsored-research'
+      fullPath: '/learning/academic-sponsored-research'
+      preLoaderRoute: typeof LearningAcademicSponsoredResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/learning/academic-programs': {
+      id: '/learning/academic-programs'
+      path: '/learning/academic-programs'
+      fullPath: '/learning/academic-programs'
+      preLoaderRoute: typeof LearningAcademicProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events/speaking-opportunities': {
+      id: '/events/speaking-opportunities'
+      path: '/events/speaking-opportunities'
+      fullPath: '/events/speaking-opportunities'
+      preLoaderRoute: typeof EventsSpeakingOpportunitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events/events-group-registration': {
+      id: '/events/events-group-registration'
+      path: '/events/events-group-registration'
+      fullPath: '/events/events-group-registration'
+      preLoaderRoute: typeof EventsEventsGroupRegistrationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events/$slug': {
+      id: '/events/$slug'
+      path: '/events/$slug'
+      fullPath: '/events/$slug'
+      preLoaderRoute: typeof EventsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/dashboard/contact-responses': {
       id: '/dashboard/contact-responses'
       path: '/dashboard/contact-responses'
@@ -713,44 +1292,299 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DashboardCertificationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/certifications/$slug': {
+      id: '/certifications/$slug'
+      path: '/certifications/$slug'
+      fullPath: '/certifications/$slug'
+      preLoaderRoute: typeof CertificationsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/transformation': {
+      id: '/business-solutions/transformation'
+      path: '/business-solutions/transformation'
+      fullPath: '/business-solutions/transformation'
+      preLoaderRoute: typeof BusinessSolutionsTransformationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/the-global-executive-council': {
+      id: '/business-solutions/the-global-executive-council'
+      path: '/business-solutions/the-global-executive-council'
+      fullPath: '/business-solutions/the-global-executive-council'
+      preLoaderRoute: typeof BusinessSolutionsTheGlobalExecutiveCouncilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/talent-management': {
+      id: '/business-solutions/talent-management'
+      path: '/business-solutions/talent-management'
+      fullPath: '/business-solutions/talent-management'
+      preLoaderRoute: typeof BusinessSolutionsTalentManagementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/pmp-project-management-certification': {
+      id: '/business-solutions/pmp-project-management-certification'
+      path: '/business-solutions/pmp-project-management-certification'
+      fullPath: '/business-solutions/pmp-project-management-certification'
+      preLoaderRoute: typeof BusinessSolutionsPmpProjectManagementCertificationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/non-profits': {
+      id: '/business-solutions/non-profits'
+      path: '/business-solutions/non-profits'
+      fullPath: '/business-solutions/non-profits'
+      preLoaderRoute: typeof BusinessSolutionsNonProfitsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/human-resources': {
+      id: '/business-solutions/human-resources'
+      path: '/business-solutions/human-resources'
+      fullPath: '/business-solutions/human-resources'
+      preLoaderRoute: typeof BusinessSolutionsHumanResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/government-activities-advocacy': {
+      id: '/business-solutions/government-activities-advocacy'
+      path: '/business-solutions/government-activities-advocacy'
+      fullPath: '/business-solutions/government-activities-advocacy'
+      preLoaderRoute: typeof BusinessSolutionsGovernmentActivitiesAdvocacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/enterprise-newsletter': {
+      id: '/business-solutions/enterprise-newsletter'
+      path: '/business-solutions/enterprise-newsletter'
+      fullPath: '/business-solutions/enterprise-newsletter'
+      preLoaderRoute: typeof BusinessSolutionsEnterpriseNewsletterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/construction': {
+      id: '/business-solutions/construction'
+      path: '/business-solutions/construction'
+      fullPath: '/business-solutions/construction'
+      preLoaderRoute: typeof BusinessSolutionsConstructionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/commercial-partners': {
+      id: '/business-solutions/commercial-partners'
+      path: '/business-solutions/commercial-partners'
+      fullPath: '/business-solutions/commercial-partners'
+      preLoaderRoute: typeof BusinessSolutionsCommercialPartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/case-studies': {
+      id: '/business-solutions/case-studies'
+      path: '/business-solutions/case-studies'
+      fullPath: '/business-solutions/case-studies'
+      preLoaderRoute: typeof BusinessSolutionsCaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/agile-technical-solutions': {
+      id: '/business-solutions/agile-technical-solutions'
+      path: '/business-solutions/agile-technical-solutions'
+      fullPath: '/business-solutions/agile-technical-solutions'
+      preLoaderRoute: typeof BusinessSolutionsAgileTechnicalSolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/academic-institutions': {
+      id: '/business-solutions/academic-institutions'
+      path: '/business-solutions/academic-institutions'
+      fullPath: '/business-solutions/academic-institutions'
+      preLoaderRoute: typeof BusinessSolutionsAcademicInstitutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/$slug': {
+      id: '/business-solutions/$slug'
+      path: '/business-solutions/$slug'
+      fullPath: '/business-solutions/$slug'
+      preLoaderRoute: typeof BusinessSolutionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/certifications/certification-resources/': {
+      id: '/certifications/certification-resources/'
+      path: '/certifications/certification-resources'
+      fullPath: '/certifications/certification-resources'
+      preLoaderRoute: typeof CertificationsCertificationResourcesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/commercial-partners/': {
+      id: '/business-solutions/commercial-partners/'
+      path: '/'
+      fullPath: '/business-solutions/commercial-partners/'
+      preLoaderRoute: typeof BusinessSolutionsCommercialPartnersIndexRouteImport
+      parentRoute: typeof BusinessSolutionsCommercialPartnersRoute
+    }
+    '/certifications/certification-resources/$slug': {
+      id: '/certifications/certification-resources/$slug'
+      path: '/certifications/certification-resources/$slug'
+      fullPath: '/certifications/certification-resources/$slug'
+      preLoaderRoute: typeof CertificationsCertificationResourcesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-solutions/commercial-partners/pmi-infinity-for-organizations': {
+      id: '/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+      path: '/pmi-infinity-for-organizations'
+      fullPath: '/business-solutions/commercial-partners/pmi-infinity-for-organizations'
+      preLoaderRoute: typeof BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRouteImport
+      parentRoute: typeof BusinessSolutionsCommercialPartnersRoute
+    }
+    '/business-solutions/commercial-partners/enterprise-membership': {
+      id: '/business-solutions/commercial-partners/enterprise-membership'
+      path: '/enterprise-membership'
+      fullPath: '/business-solutions/commercial-partners/enterprise-membership'
+      preLoaderRoute: typeof BusinessSolutionsCommercialPartnersEnterpriseMembershipRouteImport
+      parentRoute: typeof BusinessSolutionsCommercialPartnersRoute
+    }
+    '/business-solutions/commercial-partners/$slug': {
+      id: '/business-solutions/commercial-partners/$slug'
+      path: '/$slug'
+      fullPath: '/business-solutions/commercial-partners/$slug'
+      preLoaderRoute: typeof BusinessSolutionsCommercialPartnersSlugRouteImport
+      parentRoute: typeof BusinessSolutionsCommercialPartnersRoute
+    }
   }
 }
 
+interface AboutRouteChildren {
+  AboutIndexRoute: typeof AboutIndexRoute
+}
+
+const AboutRouteChildren: AboutRouteChildren = {
+  AboutIndexRoute: AboutIndexRoute,
+}
+
+const AboutRouteWithChildren = AboutRoute._addFileChildren(AboutRouteChildren)
+
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface MembershipRouteChildren {
+  MembershipChaptersRoute: typeof MembershipChaptersRoute
+  MembershipGiftRoute: typeof MembershipGiftRoute
+  MembershipProfessionalRoute: typeof MembershipProfessionalRoute
+  MembershipStudentRoute: typeof MembershipStudentRoute
+}
+
+const MembershipRouteChildren: MembershipRouteChildren = {
+  MembershipChaptersRoute: MembershipChaptersRoute,
+  MembershipGiftRoute: MembershipGiftRoute,
+  MembershipProfessionalRoute: MembershipProfessionalRoute,
+  MembershipStudentRoute: MembershipStudentRoute,
+}
+
+const MembershipRouteWithChildren = MembershipRoute._addFileChildren(
+  MembershipRouteChildren,
+)
+
+interface BusinessSolutionsCommercialPartnersRouteChildren {
+  BusinessSolutionsCommercialPartnersSlugRoute: typeof BusinessSolutionsCommercialPartnersSlugRoute
+  BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute: typeof BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute
+  BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute: typeof BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute
+  BusinessSolutionsCommercialPartnersIndexRoute: typeof BusinessSolutionsCommercialPartnersIndexRoute
+}
+
+const BusinessSolutionsCommercialPartnersRouteChildren: BusinessSolutionsCommercialPartnersRouteChildren =
+  {
+    BusinessSolutionsCommercialPartnersSlugRoute:
+      BusinessSolutionsCommercialPartnersSlugRoute,
+    BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute:
+      BusinessSolutionsCommercialPartnersEnterpriseMembershipRoute,
+    BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute:
+      BusinessSolutionsCommercialPartnersPmiInfinityForOrganizationsRoute,
+    BusinessSolutionsCommercialPartnersIndexRoute:
+      BusinessSolutionsCommercialPartnersIndexRoute,
+  }
+
+const BusinessSolutionsCommercialPartnersRouteWithChildren =
+  BusinessSolutionsCommercialPartnersRoute._addFileChildren(
+    BusinessSolutionsCommercialPartnersRouteChildren,
+  )
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
+  AboutRoute: AboutRouteWithChildren,
+  AccessibilityRoute: AccessibilityRoute,
   AdvertisingRoute: AdvertisingRoute,
-  BlogsRoute: BlogsRoute,
-  CareersRoute: CareersRoute,
-  CertificationProcessRoute: CertificationProcessRoute,
-  CertificationsRoute: CertificationsRoute,
-  CommunityLatestRoute: CommunityLatestRoute,
+  AiTodayPodcastRoute: AiTodayPodcastRoute,
+  BlogRoute: BlogRouteWithChildren,
+  CareerNavigatorRoute: CareerNavigatorRoute,
+  CareerResourcesRoute: CareerResourcesRoute,
   ContactRoute: ContactRoute,
-  DiscussionsRoute: DiscussionsRoute,
-  ElearningGiftsRoute: ElearningGiftsRoute,
-  EnterprisePartnersRoute: EnterprisePartnersRoute,
-  EventsRoute: EventsRoute,
-  LocalChaptersRoute: LocalChaptersRoute,
-  MembershipRoute: MembershipRoute,
-  MembershipFaqsRoute: MembershipFaqsRoute,
-  OnlineCoursesRoute: OnlineCoursesRoute,
-  PmbokGuideRoute: PmbokGuideRoute,
-  PmiBlogRoute: PmiBlogRoute,
-  PressRoute: PressRoute,
+  InfinityRoute: InfinityRoute,
+  InsightsRoute: InsightsRoute,
+  LoginRoute: LoginRoute,
+  MembershipRoute: MembershipRouteWithChildren,
+  MilitaryRoute: MilitaryRoute,
   PrivacyRoute: PrivacyRoute,
+  ProjectifiedPodcastRoute: ProjectifiedPodcastRoute,
   PurchasingTermsRoute: PurchasingTermsRoute,
   RefundPolicyRoute: RefundPolicyRoute,
-  ReportPdusRoute: ReportPdusRoute,
+  SignupRoute: SignupRoute,
   SitemapRoute: SitemapRoute,
-  StoreRoute: StoreRoute,
-  StoreHelpRoute: StoreHelpRoute,
-  TemplatesRoute: TemplatesRoute,
-  TermsRoute: TermsRoute,
-  TrainingPartnersRoute: TrainingPartnersRoute,
-  WebinarsRoute: WebinarsRoute,
-  WhatIsPmRoute: WhatIsPmRoute,
+  TermsOfUseRoute: TermsOfUseRoute,
+  TheShiftCodePodcastRoute: TheShiftCodePodcastRoute,
+  BusinessSolutionsSlugRoute: BusinessSolutionsSlugRoute,
+  BusinessSolutionsAcademicInstitutionsRoute:
+    BusinessSolutionsAcademicInstitutionsRoute,
+  BusinessSolutionsAgileTechnicalSolutionsRoute:
+    BusinessSolutionsAgileTechnicalSolutionsRoute,
+  BusinessSolutionsCaseStudiesRoute: BusinessSolutionsCaseStudiesRoute,
+  BusinessSolutionsCommercialPartnersRoute:
+    BusinessSolutionsCommercialPartnersRouteWithChildren,
+  BusinessSolutionsConstructionRoute: BusinessSolutionsConstructionRoute,
+  BusinessSolutionsEnterpriseNewsletterRoute:
+    BusinessSolutionsEnterpriseNewsletterRoute,
+  BusinessSolutionsGovernmentActivitiesAdvocacyRoute:
+    BusinessSolutionsGovernmentActivitiesAdvocacyRoute,
+  BusinessSolutionsHumanResourcesRoute: BusinessSolutionsHumanResourcesRoute,
+  BusinessSolutionsNonProfitsRoute: BusinessSolutionsNonProfitsRoute,
+  BusinessSolutionsPmpProjectManagementCertificationRoute:
+    BusinessSolutionsPmpProjectManagementCertificationRoute,
+  BusinessSolutionsTalentManagementRoute:
+    BusinessSolutionsTalentManagementRoute,
+  BusinessSolutionsTheGlobalExecutiveCouncilRoute:
+    BusinessSolutionsTheGlobalExecutiveCouncilRoute,
+  BusinessSolutionsTransformationRoute: BusinessSolutionsTransformationRoute,
+  CertificationsSlugRoute: CertificationsSlugRoute,
   DashboardCertificationsRoute: DashboardCertificationsRoute,
   DashboardContactResponsesRoute: DashboardContactResponsesRoute,
+  EventsSlugRoute: EventsSlugRoute,
+  EventsEventsGroupRegistrationRoute: EventsEventsGroupRegistrationRoute,
+  EventsSpeakingOpportunitiesRoute: EventsSpeakingOpportunitiesRoute,
+  LearningAcademicProgramsRoute: LearningAcademicProgramsRoute,
+  LearningAcademicSponsoredResearchRoute:
+    LearningAcademicSponsoredResearchRoute,
+  LearningBrightlineRoute: LearningBrightlineRoute,
+  LearningExamPrepRoute: LearningExamPrepRoute,
+  LearningFoundationsOfProjectManagementRoute:
+    LearningFoundationsOfProjectManagementRoute,
+  LearningFreeOnlineCoursesRoute: LearningFreeOnlineCoursesRoute,
+  LearningInstructorLedTrainingRoute: LearningInstructorLedTrainingRoute,
+  LearningOnlineCoursesRoute: LearningOnlineCoursesRoute,
+  LearningPmiTrainingRoute: LearningPmiTrainingRoute,
+  LearningProjectManagementJournalRoute: LearningProjectManagementJournalRoute,
+  LearningThoughtLeadershipRoute: LearningThoughtLeadershipRoute,
+  LearningWebinarsRoute: LearningWebinarsRoute,
+  BusinessSolutionsIndexRoute: BusinessSolutionsIndexRoute,
+  CertificationsIndexRoute: CertificationsIndexRoute,
+  EventsIndexRoute: EventsIndexRoute,
+  CertificationsCertificationResourcesSlugRoute:
+    CertificationsCertificationResourcesSlugRoute,
+  CertificationsCertificationResourcesIndexRoute:
+    CertificationsCertificationResourcesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
