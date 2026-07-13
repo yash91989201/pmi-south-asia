@@ -35,7 +35,6 @@ import { Route as EventsIndexRouteImport } from './routes/events/index'
 import { Route as CertificationsIndexRouteImport } from './routes/certifications/index'
 import { Route as BusinessSolutionsIndexRouteImport } from './routes/business-solutions/index'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
-import { Route as AboutIndexRouteImport } from './routes/about/index'
 import { Route as MembershipStudentRouteImport } from './routes/membership/student'
 import { Route as MembershipProfessionalRouteImport } from './routes/membership/professional'
 import { Route as MembershipGiftRouteImport } from './routes/membership/gift'
@@ -209,11 +208,6 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => BlogRoute,
-} as any)
-const AboutIndexRoute = AboutIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => AboutRoute,
 } as any)
 const MembershipStudentRoute = MembershipStudentRouteImport.update({
   id: '/student',
@@ -464,7 +458,7 @@ const BusinessSolutionsCommercialPartnersSlugRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteWithChildren
+  '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/ai-today-podcast': typeof AiTodayPodcastRoute
@@ -522,7 +516,6 @@ export interface FileRoutesByFullPath {
   '/membership/gift': typeof MembershipGiftRoute
   '/membership/professional': typeof MembershipProfessionalRoute
   '/membership/student': typeof MembershipStudentRoute
-  '/about/': typeof AboutIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/business-solutions': typeof BusinessSolutionsIndexRoute
   '/certifications': typeof CertificationsIndexRoute
@@ -536,6 +529,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/ai-today-podcast': typeof AiTodayPodcastRoute
@@ -591,7 +585,6 @@ export interface FileRoutesByTo {
   '/membership/gift': typeof MembershipGiftRoute
   '/membership/professional': typeof MembershipProfessionalRoute
   '/membership/student': typeof MembershipStudentRoute
-  '/about': typeof AboutIndexRoute
   '/blog': typeof BlogIndexRoute
   '/business-solutions': typeof BusinessSolutionsIndexRoute
   '/certifications': typeof CertificationsIndexRoute
@@ -606,7 +599,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRouteWithChildren
+  '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/advertising': typeof AdvertisingRoute
   '/ai-today-podcast': typeof AiTodayPodcastRoute
@@ -664,7 +657,6 @@ export interface FileRoutesById {
   '/membership/gift': typeof MembershipGiftRoute
   '/membership/professional': typeof MembershipProfessionalRoute
   '/membership/student': typeof MembershipStudentRoute
-  '/about/': typeof AboutIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/business-solutions/': typeof BusinessSolutionsIndexRoute
   '/certifications/': typeof CertificationsIndexRoute
@@ -738,7 +730,6 @@ export interface FileRouteTypes {
     | '/membership/gift'
     | '/membership/professional'
     | '/membership/student'
-    | '/about/'
     | '/blog/'
     | '/business-solutions'
     | '/certifications'
@@ -752,6 +743,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/about'
     | '/accessibility'
     | '/advertising'
     | '/ai-today-podcast'
@@ -807,7 +799,6 @@ export interface FileRouteTypes {
     | '/membership/gift'
     | '/membership/professional'
     | '/membership/student'
-    | '/about'
     | '/blog'
     | '/business-solutions'
     | '/certifications'
@@ -879,7 +870,6 @@ export interface FileRouteTypes {
     | '/membership/gift'
     | '/membership/professional'
     | '/membership/student'
-    | '/about/'
     | '/blog/'
     | '/business-solutions/'
     | '/certifications/'
@@ -894,7 +884,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRouteWithChildren
+  AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
   AdvertisingRoute: typeof AdvertisingRoute
   AiTodayPodcastRoute: typeof AiTodayPodcastRoute
@@ -1137,13 +1127,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/blog/'
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
-    }
-    '/about/': {
-      id: '/about/'
-      path: '/'
-      fullPath: '/about/'
-      preLoaderRoute: typeof AboutIndexRouteImport
-      parentRoute: typeof AboutRoute
     }
     '/membership/student': {
       id: '/membership/student'
@@ -1449,16 +1432,6 @@ declare module '@tanstack/react-router' {
   }
 }
 
-interface AboutRouteChildren {
-  AboutIndexRoute: typeof AboutIndexRoute
-}
-
-const AboutRouteChildren: AboutRouteChildren = {
-  AboutIndexRoute: AboutIndexRoute,
-}
-
-const AboutRouteWithChildren = AboutRoute._addFileChildren(AboutRouteChildren)
-
 interface BlogRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -1515,7 +1488,7 @@ const BusinessSolutionsCommercialPartnersRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRouteWithChildren,
+  AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
   AdvertisingRoute: AdvertisingRoute,
   AiTodayPodcastRoute: AiTodayPodcastRoute,
