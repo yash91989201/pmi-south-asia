@@ -159,19 +159,9 @@ function BusinessCard() {
           value="23IHKPB9012E1ZO"
         />
         <DetailItem
-          icon={<IconId size={22} />}
-          label="MSME Registration"
-          value="UDYAM-MP-48-0020980"
-        />
-        <DetailItem
           icon={<IconUser size={22} />}
           label="Business Type"
           value="Public"
-        />
-        <DetailItem
-          icon={<IconBuildingCommunity size={22} />}
-          label="Enterprise Category"
-          value="Micro Enterprise"
         />
         <DetailItem
           icon={<IconCertificate size={22} />}
