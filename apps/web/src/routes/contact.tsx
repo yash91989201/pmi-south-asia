@@ -168,7 +168,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Call Us
                     </p>
-                    <p className="font-semibold text-lg">+9xxxxxxxx33</p>
+                    <p className="font-semibold text-lg">8064055040</p>
                     <p className="text-gray-500 text-sm">
                       Mon-Fri, 9am - 5pm IST
                     </p>
@@ -183,7 +183,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Email Us
                     </p>
-                    <p className="mb-1 font-semibold text-lg">saxxx@xxxxin</p>
+                    <p className="mb-1 font-semibold text-lg">sales@pmisa.in</p>
                     <p className="text-gray-500 text-sm">
                       Expect a reply within 24 hours
                     </p>
@@ -199,12 +199,10 @@ function ContactComponent() {
                       Visit HQ
                     </p>
                     <p className="font-semibold text-lg">
-                      105 WeWork, 1st Floor, Oberoi Commerz II, International
-                      Business Park, Oberoi Garden City,
+                      Dhonga Road, Dhonga, Tikamgarh, Tikamgarh,
                     </p>
                     <p className="text-gray-500 text-sm">
-                      Off Western Express Highway, Goregaon East, Mumbai,
-                      400063, Maharashtra, India
+                      Madhya Pradesh – 472001
                     </p>
                   </div>
                 </div>
