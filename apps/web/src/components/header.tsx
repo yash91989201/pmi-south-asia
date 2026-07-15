@@ -319,22 +319,24 @@ function TopUtilityBar() {
           />
         </Link>
 
-        <a
-          className="text-gray-700 text-sm hover:text-primary"
-          href="https://consent.pmigov.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Register
-        </a>
-        <a
-          className="text-gray-700 text-sm hover:text-primary"
-          href="https://exam.pmisa.in"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Log in
-        </a>
+        <div>
+          <a
+            className="text-gray-700 text-sm hover:text-primary"
+            href="https://consent.pmigov.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Register
+          </a>
+          <a
+            className="text-gray-700 text-sm hover:text-primary"
+            href="https://exam.pmisa.in"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Log in
+          </a>
+        </div>
       </div>
     </div>
   );
