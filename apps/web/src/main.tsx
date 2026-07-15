@@ -10,6 +10,7 @@ const convex = new ConvexReactClient(env.VITE_CONVEX_URL);
 
 const router = createRouter({
   routeTree,
+  scrollRestoration: true,
   defaultPreload: "intent",
   defaultPendingComponent: () => <Loader />,
   context: {},

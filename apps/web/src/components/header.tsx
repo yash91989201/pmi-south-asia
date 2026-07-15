@@ -319,7 +319,7 @@ function TopUtilityBar() {
           />
         </Link>
 
-        <div>
+        <div className="flex gap-4">
           <a
             className="text-gray-700 text-sm hover:text-primary"
             href="https://consent.pmigov.com/"
