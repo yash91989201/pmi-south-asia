@@ -1,13 +1,12 @@
+import { Toaster } from "@pmi-south-asia/ui/components/sonner";
 import {
   createRootRouteWithContext,
   HeadContent,
   Outlet,
 } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-
 import { Footer } from "@/components/footer";
 import Header from "@/components/header";
-import { Toaster } from "@pmi-south-asia/ui/components/sonner";
 
 import "../index.css";
 
@@ -40,7 +39,7 @@ function RootComponent() {
       <HeadContent />
       <div className="flex min-h-svh flex-col">
         <Header />
-        <main className="flex-grow pt-24">
+        <main className="flex-grow">
           <Outlet />
         </main>
         <Footer />
