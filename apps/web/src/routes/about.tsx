@@ -156,7 +156,7 @@ function BusinessCard() {
         <DetailItem
           icon={<IconReceiptTax size={22} />}
           label="GST Number"
-          value="23IHKPB9012E1ZO"
+          value="27AAECP3816E1ZL"
         />
         <DetailItem
           icon={<IconUser size={22} />}
@@ -172,7 +172,7 @@ function BusinessCard() {
           className="md:col-span-2 xl:col-span-3"
           icon={<IconMapPin size={22} />}
           label="Registered Business Address"
-          value="Dhonga Road, Dhonga, Tikamgarh, Tikamgarh, Madhya Pradesh – 472001"
+          value="Oberoi Garden City, Off Western Express Highway, Goregaon East, Mumbai, 400063, Maharashtra, India"
         />
       </div>
     </article>

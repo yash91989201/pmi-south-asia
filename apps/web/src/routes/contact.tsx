@@ -199,10 +199,11 @@ function ContactComponent() {
                       Visit HQ
                     </p>
                     <p className="font-semibold text-lg">
-                      Dhonga Road, Dhonga, Tikamgarh, Tikamgarh,
+                      Oberoi Garden City, Off Western Express Highway, Goregaon
+                      East,
                     </p>
                     <p className="text-gray-500 text-sm">
-                      Madhya Pradesh – 472001
+                      Mumbai, 400063, Maharashtra, India
                     </p>
                   </div>
                 </div>
