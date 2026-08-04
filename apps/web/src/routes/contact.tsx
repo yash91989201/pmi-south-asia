@@ -168,7 +168,7 @@ function ContactComponent() {
                     <p className="mb-1 font-bold text-gray-400 text-sm uppercase tracking-wider">
                       Call Us
                     </p>
-                    <p className="font-semibold text-lg">8064055412</p>
+                    <p className="font-semibold text-lg">80XXXXXXXX12</p>
                     <p className="text-gray-500 text-sm">
                       Mon-Fri, 9am - 5pm IST
                     </p>
