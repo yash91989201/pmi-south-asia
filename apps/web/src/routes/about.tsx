@@ -73,7 +73,7 @@ function AboutComponent() {
           <InfoCard
             icon={<IconBuildingBank size={26} />}
             label="Banking Partner"
-            title="Axis Bank"
+            title="Central Bank of India"
           >
             Our official banking partner for secure and reliable transactions.
           </InfoCard>
