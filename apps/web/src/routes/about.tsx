@@ -105,12 +105,9 @@ function AboutComponent() {
           <div className="flex items-center gap-2">
             <IconUser className="text-[#5b21b6]" size={22} />
             <h2 className="font-extrabold text-2xl text-[#1e0a45]">
-              Our Members
+              Board of Director
             </h2>
           </div>
-          <p className="mt-2 text-[#475569] text-sm leading-6">
-            People behind PMI SA finance and operations.
-          </p>
 
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {members.map((member) => (
