@@ -12,7 +12,6 @@ import {
   IconUser,
 } from "@tabler/icons-react";
 import { createFileRoute } from "@tanstack/react-router";
-import type { ReactNode } from "react";
 
 export const Route = createFileRoute("/about")({
   component: AboutComponent,
@@ -36,6 +35,8 @@ const badges = [
   { label: "Verified Business", icon: <IconShieldCheck size={18} /> },
   { label: "Government Registered", icon: <IconCertificate size={18} /> },
 ];
+
+const members = [{ name: "Kaptan Singh Bunkar", role: "Finance Manager" }];
 
 function AboutComponent() {
   return (
@@ -98,6 +99,28 @@ function AboutComponent() {
               <CheckItem>100% Financial Transparency</CheckItem>
             </div>
           </InfoCard>
+        </section>
+
+        <section className="mt-10 rounded-3xl border border-slate-200/70 bg-white/90 p-6 shadow-sm md:p-8">
+          <div className="flex items-center gap-2">
+            <IconUser className="text-[#5b21b6]" size={22} />
+            <h2 className="font-extrabold text-2xl text-[#1e0a45]">
+              Our Members
+            </h2>
+          </div>
+          <p className="mt-2 text-[#475569] text-sm leading-6">
+            People behind PMI SA finance and operations.
+          </p>
+
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {members.map((member) => (
+              <MemberCard
+                key={member.name}
+                name={member.name}
+                role={member.role}
+              />
+            ))}
+          </div>
         </section>
 
         <section className="mt-10 rounded-3xl border border-slate-200/70 bg-white/90 p-4 shadow-sm">
@@ -298,5 +321,29 @@ function Notice({
       </div>
       <p className="text-[#475569] leading-7">{children}</p>
     </div>
+  );
+}
+
+function MemberCard({ name, role }: { name: string; role: string }) {
+  return (
+    <article className="h-full rounded-3xl border border-slate-200/70 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+      <div className="flex items-center gap-4">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#ede9fe] text-[#5b21b6]">
+          <IconUser size={28} stroke={1.8} />
+        </div>
+        <div className="min-w-0">
+          <h3 className="font-bold text-[#1e0a45] text-lg leading-snug">
+            {name}
+          </h3>
+          <p className="mt-1 font-bold text-[#5b21b6] text-xs uppercase tracking-[0.14em]">
+            {role}
+          </p>
+        </div>
+      </div>
+      <p className="mt-4 text-[#475569] text-sm leading-6">
+        {role} at PMI SA, supporting verified and transparent financial
+        operations.
+      </p>
+    </article>
   );
 }
