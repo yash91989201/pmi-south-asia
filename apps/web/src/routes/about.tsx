@@ -36,10 +36,7 @@ const badges = [
   { label: "Government Registered", icon: <IconCertificate size={18} /> },
 ];
 
-const members = [
-  { name: "Kaptan Singh Bunkar", role: "Finance Manager" },
-  { name: "Vikesh Rawat", role: "Account Manager" },
-];
+const members = [{ name: "Vikesh Rawat", role: "Account Manager" }];
 
 function AboutComponent() {
   return (
@@ -214,12 +211,6 @@ function BusinessDetailsCard() {
           icon={<IconFileInvoice size={22} />}
           label="Account Number"
           value="5994923883"
-        />
-        <DetailItem
-          className="md:col-span-2 xl:col-span-1"
-          icon={<IconUser size={22} />}
-          label="Account Holder Name"
-          value="Kaptan Singh Bunkar (Finance Manager)"
         />
         <DetailItem
           icon={<IconId size={22} />}
